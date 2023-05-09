@@ -5,18 +5,37 @@ import twitter from "../assets/icon-twitter.svg";
 import github from "../assets/icon-github.svg";
 import menu from "../assets/icon-menu.svg";
 import close from "../assets/icon-close.svg";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 function NavBar() {
 	const [menuIsOpen, setMenuIsOpen] = useState<boolean>(false);
-	const [sectionInView, setSectionInView] = useState("");
+	const navBarRef = useRef<HTMLElement>(null);
+
+	useEffect(() => {
+		document.addEventListener("scroll", () => {
+			if (window.scrollY > 0) {
+				navBarRef?.current?.classList.add("backdrop-blur-md");
+			} else {
+				navBarRef?.current?.classList.remove("backdrop-blur-md");
+			}
+		});
+
+		return () => {
+			document.removeEventListener("scroll", () => {
+				return;
+			});
+		};
+	}, []);
 
 	return (
-		<nav className="px-5 py-2 flex justify-between flex-wrap border-b-2 gradient-border-l-r">
-			<div className="flex gap-1 items-center md:basis-[40%] hover:cursor-pointer">
+		<nav
+			ref={navBarRef}
+			className="px-5 py-2 flex justify-between flex-wrap border-b-2 gradient-border-l-r sticky top-0 z-10 min-h-[60px]"
+		>
+			<a href="#" className="flex gap-1 items-center md:basis-[30%]">
 				<img src={H} alt="Display Picture" className="w-6" />
 				<img src={K} alt="Display Picture" className="w-6" />
-			</div>
+			</a>
 
 			<div className="invert flex items-center hover:cursor-pointer md:hidden">
 				<a onClick={() => setMenuIsOpen(!menuIsOpen)} title="menu">
@@ -27,7 +46,7 @@ function NavBar() {
 			<section
 				className={`${
 					menuIsOpen ? "flex flex-col" : "hidden"
-				} mt-5 md:m-0 w-full md:flex md:flex-row md:justify-between md:basis-[60%] items-center`}
+				} mt-5 md:m-0 w-full md:flex md:flex-row md:justify-between md:basis-[70%] items-center`}
 			>
 				<div className="flex flex-col gap-2 md:flex-row md:gap-10">
 					<div className="text-lg hover:cursor-pointer hover:text-orange-400 transition-all ease-linear w-full text-center">
@@ -41,6 +60,9 @@ function NavBar() {
 					</div>
 					<div className="text-lg hover:cursor-pointer hover:text-orange-400 transition-all ease-linear w-full text-center">
 						<a href={"#skills"}>Skills</a>
+					</div>
+					<div className="text-lg hover:cursor-pointer hover:text-orange-400 transition-all ease-linear w-full text-center">
+						<a href={"#certifications"}>Certifications</a>
 					</div>
 					<div className="text-lg hover:cursor-pointer hover:text-orange-400 transition-all ease-linear w-full text-center">
 						<a href={"#projects"}>Projects</a>

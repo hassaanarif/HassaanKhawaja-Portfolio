@@ -3,13 +3,13 @@ import DP from "../assets/DP.jfif";
 function Hero() {
 	return (
 		<>
-			<section id="about" className="py-20 px-10 w-full text-center ">
+			<section id="about" className="py-20 px-10 text-center ">
 				<span className="text-6xl font-extrabold text-white">HEY, I AM </span>
 				<span className="text-6xl font-extrabold bg-gradient-to-r from-orange-600 to-purple-600 bg-clip-text text-transparent">
 					HASSAAN KHAWAJA
 				</span>
 				<br />
-				<p className="font-thin text-2xl">Software Engineer/ Full-Stack Developer</p>
+				<p className="font-thin text-2xl mt-2 ">Software Engineer/ Full-Stack Developer</p>
 			</section>
 
 			<section className="flex flex-col md:block items-center px-10 py-5 gap-2">

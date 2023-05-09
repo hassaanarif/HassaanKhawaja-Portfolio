@@ -30,10 +30,6 @@ const skills: Skill[] = [
 		name: "CSS",
 	},
 	{
-		logoURL: HTML,
-		name: "HTML",
-	},
-	{
 		logoURL: JS,
 		name: "JavaScript",
 	},
@@ -77,7 +73,6 @@ const skills: Skill[] = [
 		logoURL: SQL,
 		name: "SQL",
 	},
-
 	{
 		logoURL: CUI,
 		name: "Chakra UI",

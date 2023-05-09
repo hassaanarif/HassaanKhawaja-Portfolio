@@ -3,7 +3,7 @@ import NavBar from "./components/NavBar";
 
 export default function Layout() {
 	return (
-		<div className="bg-gray-900 text-gray-300">
+		<div className="bg-gray-900 text-gray-300 relative">
 			<NavBar />
 			<Outlet />
 		</div>

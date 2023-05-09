@@ -8,6 +8,7 @@ const jobs: Job[] = [
 		company: "Joblogic",
 		location: "Lahore, Pakistan",
 		companyLogoURL: JL,
+		time: "Full-Time",
 		startDate: "2021-02-08",
 		positions: [
 			{
@@ -48,6 +49,7 @@ const jobs: Job[] = [
 	{
 		company: "Freelancing",
 		companyLogoURL: Freelance,
+		time: "Part-Time",
 		location: "Lahore, Pakistan",
 		startDate: "2020-10-10",
 		positions: [
@@ -74,6 +76,7 @@ const jobs: Job[] = [
 	{
 		company: "Sublime Wireless Inc.",
 		companyLogoURL: SWIUS,
+		time: "Full-Time",
 		location: "Lahore, Pakistan",
 		startDate: "2019-06-06",
 		endDate: "2020-07-06",
