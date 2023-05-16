@@ -10,6 +10,12 @@ export default {
 				".shape-outside-circle": {
 					"shape-outside": "circle()",
 				},
+				".rotate3d-left": {
+					transform: "rotate3d(0.5, -0.866, 0, 15deg) rotate(1deg)",
+				},
+				".rotate3d-right": {
+					transform: "rotate3d(0.5, 0.866, 0, 15deg) rotate(-1deg)",
+				},
 			});
 		},
 	],

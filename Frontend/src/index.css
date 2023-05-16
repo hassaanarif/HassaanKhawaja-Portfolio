@@ -41,6 +41,17 @@ body::-webkit-scrollbar-track {
 	box-shadow: -5px 5px 0 0 rgba(255, 123, 0, 0.66);
 }
 
+.perspective {
+	perspective: 1500px;
+}
+
+.row-normal {
+	flex-direction: row;
+}
+.row-reverse {
+	flex-direction: row-reverse;
+}
+
 @keyframes scrollBannerRightToLeft {
 	0% {
 		transform: translateX(0);

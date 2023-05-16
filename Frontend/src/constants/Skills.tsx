@@ -14,6 +14,7 @@ import BS from "../assets/icon-bootstrap.png";
 import JQ from "../assets/icon-jquery.png";
 import SQL from "../assets/icon-sql.png";
 import TW from "../assets/icon-tailwindcss.png";
+import RQ from "../assets/icon-reactQuery.png";
 
 interface Skill {
 	logoURL: string;
@@ -84,6 +85,10 @@ const skills: Skill[] = [
 	{
 		logoURL: BS,
 		name: "Bootstrap",
+	},
+	{
+		logoURL: RQ,
+		name: "React Query",
 	},
 ];
 

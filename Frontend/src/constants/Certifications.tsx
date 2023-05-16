@@ -1,5 +1,6 @@
 import Certificate from "../interfaces/Certificate";
 import MA from "../assets/MoshAcademy.jpeg";
+import C from "../assets/coursera.webp";
 
 const certifications: Certificate[] = [
 	{
@@ -67,6 +68,12 @@ const certifications: Certificate[] = [
 		issuer: "Mosh Academy",
 		duration: "Mar-2023 - Mar-2023",
 		logoURL: MA,
+	},
+	{
+		title: "CRYPTOGRAPHY",
+		issuer: "Coursera",
+		duration: "Sept-2020 - Sept-2020",
+		logoURL: C,
 	},
 ];
 

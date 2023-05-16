@@ -5,15 +5,10 @@ function Contact() {
 		return;
 	}
 	return (
-		<section id="contact" className="py-10 px-10">
-			<h1 className="text-center text-6xl font-extrabold bg-gradient-to-r from-orange-600 to-purple-600 bg-clip-text text-transparent">
-				CONTACT
-			</h1>
+		<section id="contact" className="my-20 mx-5 md:mx-36">
+			<h1 className="text-center text-6xl font-extrabold bg-gradient-to-r from-orange-600 to-purple-600 bg-clip-text text-transparent">CONTACT</h1>
 
-			<form
-				onSubmit={handleFormSubmit}
-				className="w-[100%] md:w-[50%] mx-auto mt-10 p-5 rounded-lg bg-white bg-opacity-20 text-white"
-			>
+			<form onSubmit={handleFormSubmit} className="w-[100%] md:w-[50%] mx-auto mt-10 p-5 rounded-lg bg-white bg-opacity-20 text-white ">
 				<div className="w-full lg:w-12/12 px-3">
 					<label className="block text-xs font-bold mb-2" htmlFor="name">
 						NAME

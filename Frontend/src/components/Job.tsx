@@ -16,7 +16,7 @@ export default function Job({ company, location, positions, time, startDate, end
 
 	return (
 		<>
-			<section className="flex gap-5 mb-5 items-center mt-10">
+			<section className="flex gap-5 items-center mt-10">
 				<img src={companyLogoURL} alt="Joblogic" className="w-12 rounded-sm self-start pt-2" />
 				<div>
 					<h2 className="font-semibold text-lg">{company.toUpperCase()}</h2>
@@ -26,10 +26,10 @@ export default function Job({ company, location, positions, time, startDate, end
 					<h3>{location}</h3>
 				</div>
 			</section>
-			<ol className="relative border-l gradient-border-t-b mx-4">
+			<ol className="relative border-l gradient-border-t-b">
 				{positions.map((position, index) => {
 					return (
-						<li key={index} className="mb-10 ml-6">
+						<li key={index} className="ml-6 my-10 md:my-5">
 							<span className="absolute flex items-center justify-center w-6 h-6 rounded-full -left-3 ring-3 bg-gray-500"></span>
 							<h3 className="font-medium leading-tight mb-3">{position.title}</h3>
 							<div className="text-sm text-justify ">

@@ -3,7 +3,7 @@ import Certificate from "./Certificate";
 
 function Certifications() {
 	return (
-		<section id="certifications" className="py-10 px-10">
+		<section id="certifications" className="my-20 mx-5 md:mx-36">
 			<h1 className="text-center break-words text-6xl font-extrabold bg-gradient-to-r from-orange-600 to-purple-600 bg-clip-text text-transparent">
 				CERTIFICATIONS
 			</h1>
