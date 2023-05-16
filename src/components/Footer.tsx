@@ -19,7 +19,7 @@ function Footer() {
 			<p className="mt-2">
 				© Copyright 2023. Made by{" "}
 				<a
-					href="#"
+					href="https://hassaan-khawaja.vercel.app/"
 					className="font-semibold text-white hover:cursor-pointer hover:text-orange-400 transition-all ease-linear"
 				>
 					Hassaan Khawaja
