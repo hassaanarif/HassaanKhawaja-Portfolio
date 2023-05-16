@@ -1,7 +1,5 @@
-import React, { FormEvent } from "react";
-
 function Contact() {
-	function handleFormSubmit(event: FormEvent<HTMLFormElement>) {
+	function handleFormSubmit() {
 		return;
 	}
 	return (
