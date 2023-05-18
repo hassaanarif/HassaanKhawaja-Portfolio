@@ -30,7 +30,7 @@ body::-webkit-scrollbar-track {
 }
 
 .banner-r-l {
-	animation: scrollBannerRightToLeft 10s linear infinite;
+	animation: scrollBannerRightToLeft 30s linear infinite;
 }
 
 .clip-octagon {
