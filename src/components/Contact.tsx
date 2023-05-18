@@ -8,7 +8,6 @@ function Contact() {
 		message: "",
 	});
 
-	console.log(formData);
 	function handleInputChange(event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) {
 		setFormData({ ...formData, [event.currentTarget.id]: event.currentTarget.value });
 	}
