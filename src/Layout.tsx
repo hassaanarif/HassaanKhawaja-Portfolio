@@ -6,6 +6,10 @@ import Certifications from "./components/Certifications";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import { injectStyle } from "react-toastify/dist/inject-style";
+
+// React-Toastify-CSS
+injectStyle();
 
 export default function Layout() {
 	return (
