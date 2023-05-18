@@ -45,25 +45,39 @@ function NavBar() {
 			>
 				<div className="flex flex-col gap-2 md:flex-row md:gap-10">
 					<div className="text-lg hover:cursor-pointer hover:text-green-400 transition-all ease-linear w-full text-center">
-						<a href="#">Home</a>
+						<a href="#" onClick={() => setMenuIsOpen(false)}>
+							Home
+						</a>
 					</div>
 					<div className="text-lg hover:cursor-pointer hover:text-green-400 transition-all ease-linear w-full text-center">
-						<a href="#about">About</a>
+						<a href="#about" onClick={() => setMenuIsOpen(false)}>
+							About
+						</a>
 					</div>
 					<div className="text-lg hover:cursor-pointer hover:text-green-400 transition-all ease-linear w-full text-center">
-						<a href="#experience">Experience</a>
+						<a href="#experience" onClick={() => setMenuIsOpen(false)}>
+							Experience
+						</a>
 					</div>
 					<div className="text-lg hover:cursor-pointer hover:text-green-400 transition-all ease-linear w-full text-center">
-						<a href={"#skills"}>Skills</a>
+						<a href={"#skills"} onClick={() => setMenuIsOpen(false)}>
+							Skills
+						</a>
 					</div>
 					<div className="text-lg hover:cursor-pointer hover:text-green-400 transition-all ease-linear w-full text-center">
-						<a href={"#certifications"}>Certifications</a>
+						<a href={"#certifications"} onClick={() => setMenuIsOpen(false)}>
+							Certifications
+						</a>
 					</div>
 					<div className="text-lg hover:cursor-pointer hover:text-green-400 transition-all ease-linear w-full text-center">
-						<a href={"#projects"}>Projects</a>
+						<a href={"#projects"} onClick={() => setMenuIsOpen(false)}>
+							Projects
+						</a>
 					</div>
 					<div className="text-lg hover:cursor-pointer hover:text-green-400 transition-all ease-linear w-full text-center">
-						<a href={"#contact"}>Contact</a>
+						<a href={"#contact"} onClick={() => setMenuIsOpen(false)}>
+							Contact
+						</a>
 					</div>
 				</div>
 			</section>
