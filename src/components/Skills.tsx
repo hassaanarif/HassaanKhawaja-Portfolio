@@ -4,9 +4,7 @@ import skills from "../constants/Skills";
 function Skills() {
 	return (
 		<section id="skills" className="my-20 mx-5 md:mx-36">
-			<h1 className="text-center text-6xl font-extrabold bg-gradient-to-r from-orange-600 to-purple-600 bg-clip-text text-transparent">
-				SKILLS
-			</h1>
+			<h1 className="text-center text-6xl font-extrabold bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent">SKILLS</h1>
 
 			<section className="mt-10 overflow-hidden bg-white bg-opacity-20 py-6 rounded-md ">
 				<div className="flex flex-row items-center  banner-r-l">

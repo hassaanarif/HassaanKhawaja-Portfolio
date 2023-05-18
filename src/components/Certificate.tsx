@@ -3,7 +3,7 @@ import Badge from "../assets/icon-badge.png";
 
 function Certificate({ title, duration, issuer, logoURL }: CertificateProps) {
 	return (
-		<div className="grow rounded-md card-shadow text-white bg-purple-800 bg-opacity-50 p-5">
+		<div className="grow rounded-md card-shadow text-white bg-blue-900 bg-opacity-50 p-5">
 			<h2 className="text-xl font-medium  mb-4">{title}</h2>
 			<div className="flex items-center mb-4">
 				<img src={logoURL} alt="Organization Logo" className="w-10 h-10 rounded-sm inline-block mr-2 " />{" "}

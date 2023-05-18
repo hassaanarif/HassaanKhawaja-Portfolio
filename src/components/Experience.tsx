@@ -4,7 +4,7 @@ import Job from "./Job";
 function Experience() {
 	return (
 		<section id="experience" className="my-20 mx-5 md:mx-36">
-			<h1 className="text-center break-words text-6xl font-extrabold bg-gradient-to-r from-orange-600 to-purple-600 bg-clip-text text-transparent">
+			<h1 className="text-center break-words text-6xl font-extrabold bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent">
 				EXPERIENCE
 			</h1>
 

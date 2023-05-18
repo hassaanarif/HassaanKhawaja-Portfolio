@@ -26,10 +26,7 @@ function NavBar() {
 	}, []);
 
 	return (
-		<nav
-			ref={navBarRef}
-			className="px-5 py-2 flex justify-between flex-wrap border-b-2 gradient-border-l-r sticky top-0 z-10"
-		>
+		<nav ref={navBarRef} className="px-5 py-2 flex justify-between flex-wrap border-b-2 gradient-border-l-r sticky top-0 z-10">
 			<a href="#" className="flex gap-1 items-center md:basis-[30%]">
 				<img src={H} alt="Display Picture" className="w-6" />
 				<img src={K} alt="Display Picture" className="w-6" />
@@ -47,25 +44,25 @@ function NavBar() {
 				} py-5 md:p-2 md:m-0 w-full md:flex md:flex-row md:justify-between md:basis-[70%] items-center`}
 			>
 				<div className="flex flex-col gap-2 md:flex-row md:gap-10">
-					<div className="text-lg hover:cursor-pointer hover:text-orange-400 transition-all ease-linear w-full text-center">
+					<div className="text-lg hover:cursor-pointer hover:text-green-400 transition-all ease-linear w-full text-center">
 						<a href="#">Home</a>
 					</div>
-					<div className="text-lg hover:cursor-pointer hover:text-orange-400 transition-all ease-linear w-full text-center">
+					<div className="text-lg hover:cursor-pointer hover:text-green-400 transition-all ease-linear w-full text-center">
 						<a href="#about">About</a>
 					</div>
-					<div className="text-lg hover:cursor-pointer hover:text-orange-400 transition-all ease-linear w-full text-center">
+					<div className="text-lg hover:cursor-pointer hover:text-green-400 transition-all ease-linear w-full text-center">
 						<a href="#experience">Experience</a>
 					</div>
-					<div className="text-lg hover:cursor-pointer hover:text-orange-400 transition-all ease-linear w-full text-center">
+					<div className="text-lg hover:cursor-pointer hover:text-green-400 transition-all ease-linear w-full text-center">
 						<a href={"#skills"}>Skills</a>
 					</div>
-					<div className="text-lg hover:cursor-pointer hover:text-orange-400 transition-all ease-linear w-full text-center">
+					<div className="text-lg hover:cursor-pointer hover:text-green-400 transition-all ease-linear w-full text-center">
 						<a href={"#certifications"}>Certifications</a>
 					</div>
-					<div className="text-lg hover:cursor-pointer hover:text-orange-400 transition-all ease-linear w-full text-center">
+					<div className="text-lg hover:cursor-pointer hover:text-green-400 transition-all ease-linear w-full text-center">
 						<a href={"#projects"}>Projects</a>
 					</div>
-					<div className="text-lg hover:cursor-pointer hover:text-orange-400 transition-all ease-linear w-full text-center">
+					<div className="text-lg hover:cursor-pointer hover:text-green-400 transition-all ease-linear w-full text-center">
 						<a href={"#contact"}>Contact</a>
 					</div>
 				</div>
