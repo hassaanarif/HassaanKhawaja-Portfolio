@@ -9,7 +9,7 @@ function NavBar() {
 	const [menuIsOpen, setMenuIsOpen] = useState<boolean>(false);
 	const navBarRef = useRef<HTMLElement>(null);
 
-	useEffect(() => {
+	const scrollHandler = (): void => {
 		document.addEventListener("scroll", () => {
 			if (window.scrollY > 0) {
 				navBarRef?.current?.classList.add("backdrop-blur-md");
@@ -17,11 +17,13 @@ function NavBar() {
 				navBarRef?.current?.classList.remove("backdrop-blur-md");
 			}
 		});
+	};
+
+	useEffect(() => {
+		scrollHandler();
 
 		return () => {
-			document.removeEventListener("scroll", () => {
-				return;
-			});
+			document.removeEventListener("scroll", scrollHandler);
 		};
 	}, []);
 
