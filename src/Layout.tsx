@@ -7,21 +7,24 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import { injectStyle } from "react-toastify/dist/inject-style";
+import Wrapper from "./components/Wrapper";
 
 // React-Toastify-CSS
 injectStyle();
 
 export default function Layout() {
 	return (
-		<div className="bg-gray-900 text-gray-300 relative">
+		<>
 			<NavBar />
-			<About />
-			<Experience />
-			<Skills />
-			<Certifications />
-			<Projects />
-			<Contact />
-			<Footer />
-		</div>
+			<Wrapper>
+				<About />
+				<Experience />
+				<Skills />
+				<Certifications />
+				<Projects />
+				<Contact />
+				<Footer />
+			</Wrapper>
+		</>
 	);
 }

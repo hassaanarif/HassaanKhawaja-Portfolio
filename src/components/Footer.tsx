@@ -20,7 +20,7 @@ function Footer() {
 				© Copyright 2023. Made by{" "}
 				<a
 					href="https://hassaan-khawaja.vercel.app/"
-					className="font-semibold text-white hover:cursor-pointer hover:text-orange-400 transition-all ease-linear"
+					className="font-semibolde hover:cursor-pointer hover:text-orange-600 transition-all ease-linear"
 				>
 					Hassaan Khawaja
 				</a>

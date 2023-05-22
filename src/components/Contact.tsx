@@ -4,6 +4,7 @@ import config from "../configuration/config.json";
 import { ToastContainer, toast } from "react-toastify";
 
 function Contact() {
+	const [processing, setProcessing] = useState<boolean>(false);
 	const [formData, setFormData] = useState({
 		name: "",
 		email: "",
@@ -17,6 +18,7 @@ function Contact() {
 
 	async function handleFormSubmit(event: FormEvent<HTMLFormElement>) {
 		event.preventDefault();
+		setProcessing(true);
 
 		axios
 			.post<typeof formData>(config.FormspreeURL, { ...formData })
@@ -50,18 +52,19 @@ function Contact() {
 					progress: undefined,
 					theme: "dark",
 				});
-			});
+			})
+			.finally(() => setProcessing(false));
 	}
 
 	return (
 		<>
-			<section id="contact" className="my-20 mx-5 md:mx-36">
-				<h1 className="text-center text-6xl font-extrabold bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent">CONTACT</h1>
+			<section id="contact" className="py-10 px-5 md:px-36">
+				<h1 className="text-center text-6xl font-extrabold bg-gradient-to-r from-orange-600 to-purple-600 bg-clip-text text-transparent">CONTACT</h1>
 
-				<form onSubmit={handleFormSubmit} className="w-[100%] md:w-[50%] mx-auto mt-10 p-5 rounded-lg bg-white bg-opacity-20 text-white ">
+				<form onSubmit={handleFormSubmit} className="w-[100%] md:w-[50%] mx-auto mt-10 p-5 rounded-lg bg-white bg-opacity-30 text-white ">
 					<div className="w-full lg:w-12/12 px-3">
 						<label className="block text-xs font-bold mb-2" htmlFor="name">
-							NAME <span className="text-[#00ffc3]"> *</span>
+							NAME <span className="text-orange-600"> *</span>
 						</label>
 						<input
 							id="name"
@@ -76,7 +79,7 @@ function Contact() {
 					</div>
 					<div className="w-full  my-5 px-3">
 						<label className="block text-xs font-bold mb-2" htmlFor="email">
-							EMAIL <span className="text-[#00ffc3]"> *</span>
+							EMAIL <span className="text-orange-600"> *</span>
 						</label>
 						<input
 							id="email"
@@ -106,7 +109,7 @@ function Contact() {
 					</div>
 					<div className="w-full my-5 px-3">
 						<label className="block text-xs font-bold mb-2" htmlFor="message">
-							MESSAGE <span className="text-[#00ffc3]"> *</span>
+							MESSAGE <span className="text-orange-600"> *</span>
 						</label>
 						<textarea
 							id="message"
@@ -121,8 +124,21 @@ function Contact() {
 						/>
 					</div>
 					<div className="w-full my-5 px-3 text-center">
-						<button type="submit" className="py-2 w-full rounded-md bg-gradient-to-r from-green-400 to-blue-400 text-black font-semibold">
-							SUBMIT
+						<button
+							type="submit"
+							className={`py-2 w-full rounded-md bg-gradient-to-r from-orange-600 to-purple-600 text-white font-semibold ${
+								processing ? "hover:cursor-not-allowed" : ""
+							}`}
+						>
+							{processing ? (
+								<div className="loading-dots">
+									<span className="dot"></span>
+									<span className="dot"></span>
+									<span className="dot"></span>
+								</div>
+							) : (
+								"SUBMIT"
+							)}
 						</button>
 					</div>
 				</form>

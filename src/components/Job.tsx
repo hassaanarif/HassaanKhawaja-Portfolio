@@ -30,11 +30,9 @@ export default function Job({ company, location, positions, time, startDate, end
 				{positions.map((position, index) => {
 					return (
 						<li key={index} className="ml-6 my-10 md:my-5">
-							<span className="absolute flex items-center justify-center w-6 h-6 rounded-full -left-3 ring-3 bg-gray-500"></span>
+							<span className="absolute flex items-center justify-center w-6 h-6 rounded-full -left-3 ring-3 bg-orange-600"></span>
 							<h3 className="font-medium leading-tight mb-3">{position.title}</h3>
-							<div className="text-sm text-justify ">
-								{<div dangerouslySetInnerHTML={{ __html: position.content }}></div>}
-							</div>
+							<div className="text-sm text-justify ">{<div dangerouslySetInnerHTML={{ __html: position.content }}></div>}</div>
 						</li>
 					);
 				})}
