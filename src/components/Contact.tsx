@@ -58,7 +58,7 @@ function Contact() {
 
 	return (
 		<>
-			<section id="contact" className="py-10 px-5 md:px-36">
+			<section id="contact" className="pb-10 px-5 md:px-36">
 				<h1 className="text-center text-6xl font-extrabold bg-gradient-to-r from-orange-600 to-purple-600 bg-clip-text text-transparent">CONTACT</h1>
 
 				<form onSubmit={handleFormSubmit} className="w-[100%] md:w-[50%] mx-auto mt-10 p-5 rounded-lg bg-white bg-opacity-30 text-white ">

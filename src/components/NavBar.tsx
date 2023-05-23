@@ -28,10 +28,7 @@ function NavBar() {
 	}, []);
 
 	return (
-		<nav
-			ref={navBarRef}
-			className="px-5 py-2 flex justify-between flex-wrap border-b-2 gradient-border-l-r sticky top-0 z-10 bg-gray-950 text-gray-300"
-		>
+		<nav ref={navBarRef} className="px-5 py-2 flex justify-between flex-wrap border-b-2 gradient-border-l-r sticky top-0 z-10 text-gray-300">
 			<a href="#" className="flex gap-1 items-center md:basis-[30%]">
 				<img src={H} alt="Display Picture" className="w-6" />
 				<img src={K} alt="Display Picture" className="w-6" />

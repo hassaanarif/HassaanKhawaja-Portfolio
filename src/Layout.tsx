@@ -14,7 +14,7 @@ injectStyle();
 
 export default function Layout() {
 	return (
-		<>
+		<div className=" bg-gray-950 text-gray-300">
 			<NavBar />
 			<Wrapper>
 				<About />
@@ -25,6 +25,6 @@ export default function Layout() {
 				<Contact />
 				<Footer />
 			</Wrapper>
-		</>
+		</div>
 	);
 }

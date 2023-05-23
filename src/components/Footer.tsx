@@ -4,7 +4,7 @@ import github from "../assets/icon-github.svg";
 
 function Footer() {
 	return (
-		<section id="contact" className="py-5 text-center border-t-[1px] gradient-border-l-r ">
+		<section id="footer" className="py-5 text-center border-t-[1px] gradient-border-l-r ">
 			<div className="flex gap-2 justify-center mt-5 md:mt-0">
 				<a href="https://www.linkedin.com/in/khawajahassaanarif/" target="_blank" rel="noreferrer" title="LinkedIn">
 					<img src={linkedin} alt="LinkedIn" className="w-12" />
