@@ -14,11 +14,7 @@ function Project({ index, title, imageURL, description, technologiesUsed }: Proj
 					viewport={{ once: true }}
 					transition={{ duration: 1 }}
 				>
-					<img
-						src={imageURL}
-						alt="Rock Paper Scissor Screenshot "
-						className={`rounded-md border-4 border-orange-600 ${(index ?? 0) % 2 === 0 ? "md:rotate3d-right" : "md:rotate3d-left"}`}
-					/>
+					<img src={imageURL} alt="Rock Paper Scissor Screenshot " className="rounded-md border-4 border-orange-600" />
 				</motion.div>
 				<motion.div
 					className="w-full md:w-[50%] text-justify"
