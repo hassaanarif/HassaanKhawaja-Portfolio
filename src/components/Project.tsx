@@ -9,7 +9,7 @@ function Project({ index, title, imageURL, description, technologiesUsed }: Proj
 			<div className={`md:flex md:gap-20 md:items-center ${(index ?? 0) % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"}`}>
 				<motion.div
 					className="w-full md:w-[50%] mt-10 mb-5 md:m-0 perspective"
-					initial={(index ?? 0) % 2 === 0 ? { x: -400 } : { x: 400 }}
+					initial={(index ?? 0) % 2 === 0 ? { x: -100 } : { x: 100 }}
 					whileInView={{ x: 0 }}
 					viewport={{ once: true }}
 					transition={{ duration: 1 }}
@@ -22,7 +22,7 @@ function Project({ index, title, imageURL, description, technologiesUsed }: Proj
 				</motion.div>
 				<motion.div
 					className="w-full md:w-[50%] text-justify"
-					initial={(index ?? 0) % 2 === 0 ? { x: 400 } : { x: -400 }}
+					initial={(index ?? 0) % 2 === 0 ? { x: 100 } : { x: -100 }}
 					whileInView={{ x: 0 }}
 					viewport={{ once: true }}
 					transition={{ duration: 1 }}

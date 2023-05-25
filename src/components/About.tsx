@@ -4,13 +4,7 @@ import DP from "../assets/DP-green.png";
 function About() {
 	return (
 		<section className="py-10 px-5 md:py-20 md:px-36 overflow-hidden">
-			<motion.article
-				id="about"
-				className="text-center "
-				initial={{ opacity: 0, scale: 0.5 }}
-				animate={{ opacity: 1, scale: 1 }}
-				transition={{ duration: 1 }}
-			>
+			<motion.article id="about" className="text-center " initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
 				<span className="text-6xl font-extrabold text-white">HEY, I AM </span>
 				<span className="text-6xl font-extrabold bg-gradient-to-r from-orange-600 to-purple-600 bg-clip-text text-transparent">HASSAAN KHAWAJA</span>
 				<br />
