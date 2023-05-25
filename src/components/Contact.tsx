@@ -38,7 +38,7 @@ function Contact() {
 					pauseOnHover: true,
 					draggable: true,
 					progress: undefined,
-					theme: "dark",
+					theme: "light",
 				});
 			})
 			.catch((error) => {
@@ -50,7 +50,7 @@ function Contact() {
 					pauseOnHover: true,
 					draggable: true,
 					progress: undefined,
-					theme: "dark",
+					theme: "light",
 				});
 			})
 			.finally(() => setProcessing(false));

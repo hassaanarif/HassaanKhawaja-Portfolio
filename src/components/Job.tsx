@@ -1,5 +1,6 @@
 import moment from "moment";
 import JobProp from "../interfaces/Job";
+import { motion } from "framer-motion";
 
 export default function Job({ company, location, positions, time, startDate, endDate, companyLogoURL }: JobProp) {
 	const calculateExperienceDuration = (experience: { startDate: string; endDate?: string }): string => {
@@ -15,7 +16,7 @@ export default function Job({ company, location, positions, time, startDate, end
 	};
 
 	return (
-		<>
+		<motion.article initial={{ y: 100 }} whileInView={{ y: 0 }} viewport={{ once: true }} transition={{ duration: 1 }}>
 			<section className="flex gap-5 items-center mt-10">
 				<img src={companyLogoURL} alt="Joblogic" className="w-12 rounded-sm self-start pt-2" />
 				<div>
@@ -37,6 +38,6 @@ export default function Job({ company, location, positions, time, startDate, end
 					);
 				})}
 			</ol>
-		</>
+		</motion.article>
 	);
 }
