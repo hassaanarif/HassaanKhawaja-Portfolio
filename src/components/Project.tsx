@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import ProjectProp from "../interfaces/Project";
+import LazyImage from "./LazyImage";
 
 function Project({ index, title, imageURL, description, technologiesUsed }: ProjectProp) {
 	return (
@@ -14,7 +15,7 @@ function Project({ index, title, imageURL, description, technologiesUsed }: Proj
 					viewport={{ once: true }}
 					transition={{ duration: 1 }}
 				>
-					<img src={imageURL} alt="Rock Paper Scissor Screenshot " className="rounded-md border-4 border-orange-600" />
+					<LazyImage src={imageURL} alt="Project Screenshot" />
 				</motion.div>
 				<motion.div
 					className="w-full md:w-[50%] text-justify"
