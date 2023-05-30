@@ -38,7 +38,7 @@ function LazyImage({ src, alt }: LazyImageProps) {
 		};
 	}, [src]);
 
-	return <img ref={imageRef} src={imageSrc} alt="Project Screenshot " className="rounded-md border-4 border-orange-600" />;
+	return <img ref={imageRef} src={imageSrc} alt={alt} className="rounded-md border-4 border-orange-600" />;
 }
 
 export default LazyImage;
