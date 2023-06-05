@@ -4,7 +4,13 @@ import DP from "../assets/DP-green.png";
 function About() {
 	return (
 		<section className="py-10 px-5 md:py-20 md:px-36 overflow-hidden">
-			<motion.article id="about" className="text-center " initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
+			<motion.article
+				id="about"
+				className="text-center "
+				initial={{ opacity: 0, scale: 0.75 }}
+				animate={{ opacity: 1, scale: 1 }}
+				transition={{ duration: 1 }}
+			>
 				<span className="text-6xl font-extrabold text-white">HEY, I AM </span>
 				<span className="text-6xl font-extrabold bg-gradient-to-r from-orange-600 to-purple-600 bg-clip-text text-transparent">HASSAAN KHAWAJA</span>
 				<br />
@@ -12,16 +18,9 @@ function About() {
 			</motion.article>
 
 			<article className="flex flex-col items-center gap-2 mt-10 md:mt-20 md:block">
-				<motion.img
-					src={DP}
-					alt="Display Picture"
-					className="rounded-full w-[200px] mb-5 md:mb-0 md:float-left md:shape-outside-circle md:mr-5"
-					initial={{ opacity: 0, x: -200 }}
-					animate={{ opacity: 1, x: 0 }}
-					transition={{ duration: 1 }}
-				/>
+				<img src={DP} alt="Display Picture" className="rounded-full w-[200px] mb-5 md:mb-0 md:float-left md:shape-outside-circle md:mr-5" />
 
-				<motion.div initial={{ opacity: 0, x: 400 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}>
+				<motion.div initial={{ opacity: 0, x: 200 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}>
 					<p className="text-justify">
 						As a software engineer and web developer with three years of experience, I bring a wealth of knowledge and expertise to every project I
 						undertake. My proficiency in programming languages such as JavaScript, TypeScript, and C# and frameworks such as React, NextJs and ASP.NET

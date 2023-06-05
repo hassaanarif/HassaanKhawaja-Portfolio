@@ -6,7 +6,7 @@ function Certificate({ title, duration, issuer, logoURL }: CertificateProps) {
 	return (
 		<motion.div
 			className="grow rounded-md card-shadow text-white bg-purple-950  p-5"
-			initial={{ scale: 0.75 }}
+			initial={{ scale: 0.9 }}
 			whileInView={{ scale: 1 }}
 			viewport={{ once: true }}
 			transition={{ duration: 0.75 }}
