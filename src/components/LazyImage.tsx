@@ -23,7 +23,7 @@ function LazyImage({ src, alt }: LazyImageProps) {
 
 		if (imageRef.current) {
 			observer = new IntersectionObserver(handleObserver, {
-				rootMargin: "300px", // To trigger the callback earlier meaning image will load before the image is visible on screen
+				rootMargin: "500px", // To trigger the callback earlier meaning image will load before the image is visible on screen
 				root: null,
 				threshold: 0.1,
 			});
