@@ -16,7 +16,7 @@ export default function Job({ company, location, positions, time, startDate, end
 	};
 
 	return (
-		<motion.article initial={{ y: 100 }} whileInView={{ y: 0 }} viewport={{ once: true }} transition={{ duration: 1 }}>
+		<motion.article initial={{ y: 30 }} whileInView={{ y: 0 }} viewport={{ once: true }} transition={{ duration: 1 }}>
 			<section className="flex gap-5 items-center mt-10">
 				<img src={companyLogoURL} alt="Joblogic" className="w-12 rounded-sm self-start pt-2" />
 				<div>
