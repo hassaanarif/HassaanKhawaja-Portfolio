@@ -1,12 +1,12 @@
 import JL from "../assets/Joblogic.png";
-import Freelance from "../assets/icon-freelance.png";
 import SWIUS from "../assets/SWIUS.jpg";
+import Freelance from "../assets/icon-freelance.png";
 import Job from "../interfaces/Job";
 
 const jobs: Job[] = [
 	{
 		company: "Joblogic",
-		location: "Lahore, Pakistan",
+		location: "Sydney, Australia (Remote)",
 		companyLogoURL: JL,
 		time: "Full-Time",
 		startDate: "2021-02-08",
@@ -39,7 +39,7 @@ const jobs: Job[] = [
 		company: "Freelancing",
 		companyLogoURL: Freelance,
 		time: "Part-Time",
-		location: "Lahore, Pakistan",
+		location: "Sydney, Australia (Remote)",
 		startDate: "2020-10-10",
 		positions: [
 			{
