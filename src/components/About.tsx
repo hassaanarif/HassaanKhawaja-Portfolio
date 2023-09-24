@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import DP from "../assets/DP.png";
+import DP from "../assets/DP.webp";
 
 function About() {
 	return (
