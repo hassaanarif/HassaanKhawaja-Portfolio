@@ -8,7 +8,7 @@ function About() {
 				<span className="text-6xl font-extrabold text-white">HEY, I AM </span>
 				<span className="text-6xl font-extrabold bg-gradient-to-r from-orange-600 to-purple-600 bg-clip-text text-transparent">HASSAAN KHAWAJA</span>
 				<br />
-				<p className="font-thin text-2xl mt-2">Software Engineer/ Full-Stack Developer</p>
+				<p className="font-thin text-2xl mt-2">Software Engineer</p>
 			</motion.article>
 
 			<article className="flex flex-col items-center gap-2 mt-10 md:mt-20 md:block">

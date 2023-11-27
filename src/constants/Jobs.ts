@@ -6,7 +6,7 @@ import Job from "../interfaces/Job";
 const jobs: Job[] = [
 	{
 		company: "Joblogic",
-		location: "Sydney, Australia (Remote)",
+		location: "Lahore, Pakistan (Remote)",
 		companyLogoURL: JL,
 		time: "Full-Time",
 		startDate: "2021-02-08",
@@ -39,8 +39,8 @@ const jobs: Job[] = [
 		company: "Freelancing",
 		companyLogoURL: Freelance,
 		time: "Part-Time",
-		location: "Sydney, Australia (Remote)",
-		startDate: "2020-10-10",
+		location: "Lahore, Pakistan (Remote)",
+		startDate: "2020-11-10",
 		positions: [
 			{
 				title: "React Developer",
