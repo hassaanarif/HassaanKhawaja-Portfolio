@@ -5,7 +5,7 @@ import RPS from "../assets/screenshot-rockPaperScissor.png";
 import VD from "../assets/screenshot-vidly.png";
 import AX from "../assets/Screenshot-airviewX.png";
 import PF from "../assets/screenshot-potfolio.png";
-import JL from "../assets/Screenshot-Joblogic.png";
+import JL from "../assets/Screenshot-joblogic.png";
 
 const projects: Project[] = [
   {
