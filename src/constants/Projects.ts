@@ -3,46 +3,74 @@ import TG from "../assets/screenshot-trackerGo.png";
 import CA from "../assets/screenshot-chatApplication.png";
 import RPS from "../assets/screenshot-rockPaperScissor.png";
 import VD from "../assets/screenshot-vidly.png";
-import RC from "../assets/screenshot-rawgClone.png";
+import AX from "../assets/Screenshot-airviewX.png";
 import PF from "../assets/screenshot-potfolio.png";
+import JL from "../assets/Screenshot-Joblogic.png";
 
 const projects: Project[] = [
-	{
-		title: "ROCK PAPER SCISSOR GAME",
-		imageURL: RPS,
-		description: `Undertaking my inaugural web project, the "Rock Paper Scissor" game, proved to be an enlightening experience that left an indelible mark on my journey as a developer. With this venture, I implemented several noteworthy features, including intuitive user interfaces, dynamic gameplay mechanics, and seamless transitions between rounds. Through the process, I gained invaluable insights into front-end development, honed my problem-solving abilities, and acquired a deeper understanding of Javascript's versatility. Moreover, witnessing the enjoyment and engagement of users as they immersed themselves in the game further fueled my passion for creating captivating digital experiences. This project served as a stepping stone, igniting a fervor within me to explore further horizons in web development.`,
-		technologiesUsed: "HTML5, CSS3, JavaScript (ES6+)",
-	},
-	{
-		title: "VIDLY [VIDEO RENTAL APP]",
-		imageURL: VD,
-		description: `I embarked on my very first web project utilizing ReactJS, a remarkable journey that resulted in the creation of "Vidly," a captivating video rental application. Leveraging ReactJS' class and functional components for the frontend, and Node.js along with Express for the backend, I deftly crafted an engaging user interface and a robust framework to power the application's functionality. This experience served as a pivotal milestone in my web development endeavors, further fueling my passion to explore and excel in this dynamic field.`,
-		technologiesUsed: "HTML5, CSS3, JavaScript (ES6+), ReactJS, React Router DOM, Joi, LoDash, Bootstrap, Node.js, Express.js, MongoDB, Heruko",
-	},
-	{
-		title: "CHAT APPLICATION",
-		imageURL: CA,
-		description: `I took on an exciting project that involved building a Chat Application using Socket.io. It was a fascinating exploration of Socket.io's capabilities for enabling real-time communication. I dove into the intricacies of Socket.io, creating a dynamic platform that allowed users to engage in instant conversations. This experience opened my eyes to the power of Socket.io in crafting interactive and engaging real-time applications.`,
-		technologiesUsed: "HTML5, CSS3, JavaScript (ES6+), ReactJS 18, Node.js, Express.js, Socket.io, MongoDB",
-	},
-	{
-		title: "TRACKER GO",
-		imageURL: TG,
-		description: `I had the privilege of contributing to the development of TrackerGo, a pivotal internal tool at Joblogic Pvt Ltd. This robust system revolutionized the management of customer data, finances, and onboarding processes. Leveraging my proficiency in C#, ASP.NET Core, Entity Framework, and SQL Server, I implemented intricate business logic to safeguard sensitive information, granting authorized access to authorized personnel. Employing Bootstrap and jQuery, I crafted a responsive user interface that facilitated seamless navigation through customer data, chat history, and support tickets. By optimizing system performance, I significantly enhanced user productivity and overall effectiveness. Additionally, my frontend/UI expertise allowed me to create an intuitive and visually pleasing interface, resulting in heightened user satisfaction.`,
-		technologiesUsed: "HTML5, CSS3, JavaScript (ES6+), C#, ASP.NET Core, Entity Framework, JQuery, Bootstrap, KendoUI",
-	},
-	{
-		title: "RAWG.IO CLONE",
-		imageURL: RC,
-		description: `I had the privilege of working on an exhilarating project, a clone of the popular gaming website rawg.io. What made this endeavor even more exciting was that it was developed using TypeScript, the statically-typed superset of JavaScript. Leveraging the latest version of React (v18) and incorporating renowned libraries like React Query and Chakra UI, I embarked on this TypeScript-driven journey. With meticulous attention to detail, I meticulously recreated the captivating features and functionalities of rawg.io, ensuring a seamless and immersive gaming experience for users. TypeScript's robust type system allowed for enhanced code quality and improved maintainability, reducing errors and facilitating efficient collaboration within the development team. By employing React Query, I optimized data fetching and caching, while the utilization of Chakra UI facilitated the creation of visually stunning and user-friendly interfaces. This project not only allowed me to explore the power of TypeScript but also sharpened my skills in crafting exceptional web applications.`,
-		technologiesUsed: "HTML5, CSS3, JavaScript (ES6+), TypeScript, Chakra UI, React Query, Rawg.io API",
-	},
-	{
-		title: "PORTFOLIO",
-		imageURL: PF,
-		description: `I had the pleasure of crafting my own personal portfolio, a showcase of my skills and achievements. Leveraging the power of React with TypeScript and harnessing the flexibility of Tailwind CSS, I embarked on this self-expression journey. By employing React's component-based architecture and TypeScript's static typing, I created a robust and scalable portfolio that seamlessly showcased my work and expertise. With the help of Tailwind CSS, I achieved a sleek and modern design, ensuring a visually appealing and responsive user experience across different devices. This project not only allowed me to demonstrate my technical prowess but also served as a testament to my creativity and dedication to continuous improvement.`,
-		technologiesUsed: "HTML5, CSS3, JavaScript (ES6+), TypeScript, Tailwind CSS, Node.js, Express.js, MongoDB, Vercel",
-	},
+  {
+    title: "TRACKER GO",
+    imageURL: TG,
+    briefIntroduction: `In this project, I developed an in-house, cloud-hosted Customer Relationship Management software, TrackerGo, for Joblogic Pvt Ltd. This solution eliminated the company's reliance on third-party paid CRMs, significantly reducing its annual expenditures.`,
+    theProblem: `Company's heavy reliance on expensive third-party CRM systems and inefficient manual invoicing processes.`,
+    myContributions: `I contributed by using my skills in JavaScript, HTML, CSS, C#, SQL, ASP.NET, Azure, Vue.js, Serverless, REST API, Microservices, and jQuery. I developed optimization techniques for large data throughput, integrated TrackerGo with Xero API for automated invoicing, and migrated legacy code to a more scalable and maintainable microservice architecture.`,
+    theOutcome: `A 27% cut in annual expenditures, 60% improvement in user experience, 18% reduction in invoicing errors, and a 55% increase in scalability and maintainability of the system.`,
+    technologiesUsed: "HTML5, CSS3, JavaScript (ES6+), C#, ASP.NET Core, Entity Framework, JQuery, Bootstrap, KendoUI",
+  },
+  {
+    title: "Enterprise-Level Database Optimization and Maintenance",
+    imageURL: JL,
+    briefIntroduction: `Enterprise-Level Database Optimization and Maintenance`,
+    theProblem: `The project aimed to address the high costs associated with Joblogic's Microsoft Azure subscription due to peak database usage. Additionally, there was an issue of slow query execution time due to legacy queries.`,
+    myContributions: `I utilized my skills in SQL, jQuery, Optimization and Microsoft Azure to optimize over 500 legacy queries, reducing query execution time by 75%. I also wrote over 200 complex SQL Queries and Stored Procedures and created more than 60 bespoke dashboards as per customer requirements.`,
+    theOutcome: `The optimization resulted in a 31% reduction in peak database usage, significantly reducing Joblogic's annual Microsoft Azure's subscription cost. Additionally, the bespoke dashboards generated around £30,000 in revenue for Joblogic in one year.`,
+    technologiesUsed: "HTML5, CSS3, JavaScript (ES6+), TypeScript, Chakra UI, React Query, Rawg.io API",
+  },
+  {
+    title: "AIRVIEW X",
+    imageURL: AX,
+    briefIntroduction: `This project involved the creation of a real-time data visualization dashboard for AirViewX, a unified digitalization platform. The aim was to accelerate digital transformation efforts for businesses, thereby improving efficiencies and significantly reducing costs.`,
+    theProblem: `The challenge was to enhance data monitoring capabilities, automate data retrieval processes, and optimize database performance for handling large volumes of telecom data.`,
+    myContributions: `Using skills in JavaScript, HTML, CSS, TypeScript, React, Node.js, Express.js, API Integration, and CI/CD, I developed a dashboard, integrated telecom APIs into the portal, and optimized database performance.`,
+    theOutcome: `The project resulted in a 30% improvement in data monitoring, a 40% reduction in manual data entry, and a 20% reduction in query response time. These improvements led to increased accuracy in reporting and operational efficiency.`,
+    technologiesUsed: "HTML5, CSS3, JavaScript (ES6+), TypeScript, Tailwind CSS, Node.js, Express.js, MongoDB",
+  },
+  {
+    title: "PORTFOLIO",
+    imageURL: PF,
+    briefIntroduction: `I had the opportunity to create a personal portfolio, a testament to my skills and accomplishments. Utilizing React with TypeScript and Tailwind CSS, I embarked on a journey of self-expression.`,
+    theProblem: `The challenge was to create a robust, scalable, and visually appealing portfolio that effectively highlights my work and expertise across various devices.`,
+    myContributions: `Leveraging my skills in JavaScript, HTML, Tailwind CSS, CSS, TypeScript, React, Node.js, Express.js, Vercel and Next.js, I developed a portfolio using React's component-based architecture and TypeScript's static typing. Tailwind CSS was instrumental in achieving a sleek, modern design.`,
+    theOutcome: `The result was a comprehensive portfolio that not only demonstrated my technical abilities but also highlighted my creativity and commitment to continuous improvement. It provided a responsive user experience across different devices, effectively showcasing my work and expertise.`,
+    technologiesUsed: "HTML5, CSS3, JavaScript (ES6+), TypeScript, Tailwind CSS, Node.js, Express.js, MongoDB, Vercel",
+  },
+  {
+    title: "CHAT APPLICATION",
+    imageURL: CA,
+    briefIntroduction: `This project involved the creation of a Chat Application leveraging Socket.io for real-time communication. The goal was to create a dynamic and engaging platform for instant conversation.`,
+    theProblem: `The challenge was to harness the power of Socket.io to facilitate real-time, interactive communication between users.	`,
+    myContributions: `Utilizing my skills in JavaScript, HTML, CSS, Tailwind CSS, TypeScript, MongoDB, React, Node.js, Express.js, Sockets, REST API, and GitHub, I delved into the intricacies of Socket.io, crafting a highly interactive chat application.`,
+    theOutcome: `The project was a success, revolutionizing user engagement through instant, real-time communication. This experience showcased the potential of Socket.io in creating dynamic and interactive applications.`,
+    technologiesUsed: "HTML5, CSS3, JavaScript (ES6+), ReactJS 18, Node.js, Express.js, Socket.io, MongoDB",
+  },
+  {
+    title: "VIDLY - A VIDEO RENTAL APP",
+    imageURL: VD,
+    briefIntroduction: `I embarked on a journey to create "Vidly," a captivating video rental application using ReactJS. This marked my first web project with ReactJS, utilizing its class and functional components for frontend development, and Node.js along with Express for backend functionality.`,
+    theProblem: `The project aimed to modernize the traditional video rental experience, providing a user-friendly interface and robust functionality to streamline the process.`,
+    myContributions: `Leveraging skills in JavaScript, HTML, Tailwind CSS, CSS, TypeScript, React, Node.js, Express.js, Firebase, GitHub, and MongoDB, I developed an engaging user interface and a robust framework to power the application's functionality.`,
+    theOutcome: `The completion of this project marked a pivotal milestone in my web development journey, further fueling my passion to explore and excel in this dynamic field. The application successfully revolutionized the video rental experience, making it more accessible and enjoyable for users.`,
+    technologiesUsed: "HTML5, CSS3, JavaScript (ES6+), ReactJS, React Router DOM, Joi, LoDash, Bootstrap, Node.js, Express.js, MongoDB, Heruko",
+  },
+  {
+    title: "ROCK PAPER SCISSOR GAME",
+    imageURL: RPS,
+    briefIntroduction: `This project entailed the creation of my first web game, "Rock Paper Scissor". The game featured intuitive user interfaces and seamless transitions between rounds, providing users with a captivating digital experience.`,
+    theProblem: `The project aimed to address the challenge of creating an engaging and dynamic web-based game that could provide an immersive user experience.`,
+    myContributions: `Using my skills in JavaScript, HTML, CSS, Node.js, GitHub, jQuery, and REST API, I was able to design and implement the game logic, user interface, and transitions. My problem-solving abilities were put to the test, and I gained valuable insights into web development.`,
+    theOutcome: `The game was well-received by users, their engagement and enjoyment serving as strong testament to the success of the project. This venture served as a steppingstone for me, igniting a passion for web development and prompting me to explore further horizons in the field.`,
+    technologiesUsed: "HTML5, CSS3, JavaScript (ES6+)",
+  },
 ];
 
 export default projects;
