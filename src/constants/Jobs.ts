@@ -10,9 +10,10 @@ const jobs: Job[] = [
     companyLogoURL: JL,
     time: "Full-time",
     startDate: "2021-02-08",
+    endDate: "2024-04-30",
     positions: [
       {
-        title: "Full Stack Developer",
+        title: "Senior Full Stack Developer",
         content: `
 •	Developed a cloud-hosted Customer Relationship Management software, called TrackerGo, in-house, which led to the elimination of reliance of Joblogic on third party paid CRMs, hence cutting its annual expenditures by 27%. 
 <br/>•	Devised different optimization techniques to deal with large data throughput, resulting in quick navigation between pages, faster page loads, smooth animations, quick query executions and overall, 60% improvement in user experience.
@@ -40,6 +41,7 @@ const jobs: Job[] = [
     time: "Part-time",
     location: "Sydney, Australia (Remote)",
     startDate: "2020-11-10",
+    endDate: "2024-03-01",
     positions: [
       {
         title: "Full Stack Developer",
