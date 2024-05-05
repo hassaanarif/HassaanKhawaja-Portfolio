@@ -12,9 +12,11 @@ function About() {
         transition={{ duration: 1 }}
       >
         <span className="text-6xl font-extrabold text-white">HEY, I AM </span>
-        <span className="text-6xl font-extrabold bg-gradient-to-r from-orange-600 to-purple-600 bg-clip-text text-transparent">HASSAAN KHAWAJA</span>
+        <span className="text-6xl font-extrabold bg-gradient-to-r from-orange-600 to-purple-600 bg-clip-text text-transparent">
+          KHAWAJA HASSAAN ARIF
+        </span>
         <br />
-        <p className="font-thin text-2xl mt-2">A Software Developer</p>
+        <p className="font-thin text-2xl mt-2">Senior Full Stack Developer</p>
       </motion.article>
 
       <article className="flex flex-col items-center gap-2 mt-10 md:mt-20 md:block">
