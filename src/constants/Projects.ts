@@ -1,13 +1,24 @@
-import Project from "../interfaces/Project";
-import TG from "../assets/screenshot-trackerGo.png";
-import CA from "../assets/screenshot-chatApplication.png";
-import RPS from "../assets/screenshot-rockPaperScissor.png";
-import VD from "../assets/screenshot-vidly.png";
+import NSW from "../assets/NSW-Department-of-Education-logo.png";
 import AX from "../assets/Screenshot-airviewX.png";
-import PF from "../assets/screenshot-potfolio.png";
+import CA from "../assets/screenshot-chatApplication.png";
 import JL from "../assets/Screenshot-joblogic.png";
+import PF from "../assets/screenshot-potfolio.png";
+import RPS from "../assets/screenshot-rockPaperScissor.png";
+import TG from "../assets/screenshot-trackerGo.png";
+import VD from "../assets/screenshot-vidly.png";
+import Project from "../interfaces/Project";
 
 const projects: Project[] = [
+  {
+    title: "New South Wales School Infrastructure Digital Twin",
+    imageURL: NSW,
+    briefIntroduction: `I worked on the NSW School Infrastructure Digital Twin project, leveraging geospatial and data analytics technologies to optimize school planning and asset management, improving decision-making and resource allocation across the education sector.`,
+    theProblem: `NSW Department of Education was experiencing challenges which included lack of real-time data, fragmented asset tracking, and difficulties in optimizing school infrastructure for growing and changing demands.`,
+    myContributions: `I played a key role in enhancing the NSW School Infrastructure Digital Twin project by developing new features, optimizing legacy code, and resolving critical bugs using Vue.js and TypeScript, while streamlining workflows through Azure DevOps.`,
+    theOutcome: `The NSW School Infrastructure Digital Twin project resulted in improved efficiency in school planning, real-time asset management, and better resource allocation across the education sector.`,
+    technologiesUsed:
+      "HTML5, CSS3, TypeScript, Vue.js, Azure DevOps, Azure, REST API, Microservices, Geospatial Technologies",
+  },
   {
     title: "TRACKER GO",
     imageURL: TG,
@@ -60,7 +71,8 @@ const projects: Project[] = [
     theProblem: `The project aimed to modernize the traditional video rental experience, providing a user-friendly interface and robust functionality to streamline the process.`,
     myContributions: `Leveraging skills in JavaScript, HTML, Tailwind CSS, CSS, TypeScript, React, Node.js, Express.js, Firebase, GitHub, and MongoDB, I developed an engaging user interface and a robust framework to power the application's functionality.`,
     theOutcome: `The completion of this project marked a pivotal milestone in my web development journey, further fueling my passion to explore and excel in this dynamic field. The application successfully revolutionized the video rental experience, making it more accessible and enjoyable for users.`,
-    technologiesUsed: "HTML5, CSS3, JavaScript (ES6+), ReactJS, React Router DOM, Joi, LoDash, Bootstrap, Node.js, Express.js, MongoDB, Heruko",
+    technologiesUsed:
+      "HTML5, CSS3, JavaScript (ES6+), ReactJS, React Router DOM, Joi, LoDash, Bootstrap, Node.js, Express.js, MongoDB, Heruko",
   },
   {
     title: "ROCK PAPER SCISSOR GAME",

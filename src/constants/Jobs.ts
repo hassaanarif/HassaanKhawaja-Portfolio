@@ -1,12 +1,32 @@
-import JL from "../assets/Joblogic.png";
 import Aircod from "../assets/Aircod.png";
 import Freelance from "../assets/icon-freelance.png";
+import JL from "../assets/Joblogic.png";
+import Woolpert from "../assets/Woolpert.png";
 import Job from "../interfaces/Job";
 
 const jobs: Job[] = [
   {
+    company: "Woolpert Australia",
+    companyLogoURL: Woolpert,
+    time: "Full-time",
+    location: "Sydney, Australia",
+    startDate: "2024-05-27",
+
+    positions: [
+      {
+        title: "Senior Software Developer",
+        content: `
+•	Collaborated with the New South Wales and Queensland Governments to deliver advanced GIS web solutions.
+<br/>•	Enhanced GIS tool capabilities through extensive SDK development, increasing tool functionality by 40%.
+<br/>•	Refactored and optimized existing applications to improve performance, achieving a 20% increase in overall application performance.
+<br/>•	Skills used were HTML5, CSS3, JavaScript, TypeScript, Vue.js, ASP.NET Core, C#, SQL, Esri ArcGIS SDK, VertiGIS SDK, CI/CD Pipeline and Git.
+`,
+      },
+    ],
+  },
+  {
     company: "Joblogic Pvt Ltd",
-    location: "Sydney, Australia (Remote)",
+    location: "Lahore, Pakistan",
     companyLogoURL: JL,
     time: "Full-time",
     startDate: "2021-02-08",
@@ -39,7 +59,7 @@ const jobs: Job[] = [
     company: "Freelance",
     companyLogoURL: Freelance,
     time: "Part-time",
-    location: "Sydney, Australia (Remote)",
+    location: "Lahore, Pakistan (Remote)",
     startDate: "2020-11-10",
     endDate: "2024-03-01",
     positions: [
