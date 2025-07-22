@@ -17,9 +17,9 @@ const jobs: Job[] = [
         title: "Senior Software Developer",
         content: `
 •	Collaborated with the New South Wales and Queensland Governments to deliver advanced GIS web solutions.
-<br/>•	Enhanced GIS tool capabilities through extensive SDK development, increasing tool functionality by 40%.
-<br/>•	Refactored and optimized existing applications to improve performance, achieving a 20% increase in overall application performance.
-<br/>•	Skills used were HTML5, CSS3, JavaScript, TypeScript, Vue.js, ASP.NET Core, C#, SQL, Esri ArcGIS SDK, VertiGIS SDK, CI/CD Pipeline and Git.
+<br/>•	Developed NSW School Infrastructure Digital Twin, streamlining asset management for 2200+ schools in New South Wales.
+<br/>•	Enhanced GIS tool capabilities through extensive SDK integration, increasing tool functionality by 40%.
+<br/>•	Skills used were HTML5, CSS3, JavaScript, TypeScript, Vue.js, Node.js, Esri ArcGIS SDK, PostgreSQL, Azure DevOps, CI/CD Pipeline and Git.
 `,
       },
     ],
@@ -33,23 +33,23 @@ const jobs: Job[] = [
     endDate: "2024-04-30",
     positions: [
       {
-        title: "Senior Full Stack Developer",
+        title: "Full Stack Developer",
         content: `
-•	Developed a cloud-hosted Customer Relationship Management software, called TrackerGo, in-house, which led to the elimination of reliance of Joblogic on third party paid CRMs, hence cutting its annual expenditures by 27%. 
+•	Built TrackerGo, a cloud-based CRM developed in-house, which replaced third-party CRMs and helped Joblogic cut annual costs by 30%.
 <br/>•	Devised different optimization techniques to deal with large data throughput, resulting in quick navigation between pages, faster page loads, smooth animations, quick query executions and overall, 60% improvement in user experience.
-<br/>•	Integrated TrackerGo with Xero API, automating the invoicing process, and ensuring accurate synchronization between the two platforms, resulting in an 18% reduction in invoicing errors.
-<br/>•	Migrated legacy code from monolithic to microservice architecture, making it 55% more scalable and maintainable.
-<br/>•	Skills used were HTML, CSS, JavaScript, jQuery, Vue.js, C#, ASP.NET Core MVC, Entity Framework, SQL, Swagger, Microsoft Azure, Azure Functions, Azure DevOps, CI/CD Pipeline and Git.
+<br/>•	Integrated TrackerGo with Xero API, automating the invoicing process, resulting in a 90% reduction in invoicing errors.
+<br/>•	Migrated legacy code from monolithic to microservice architecture, making it 100% more scalable and maintainable.
+<br/>•	Skills used were HTML5, CSS3, JavaScript, jQuery, Vue.js, C#, ASP.NET Core MVC, Entity Framework ORM, SQL Server, Swagger, Microsoft Azure, Azure Functions, Azure DevOps, REST API, CI/CD Pipeline, Batch & Stream Processing, Kafka, Jira and Git.
 `,
       },
       {
         title: "Database Engineer",
         content: `
-•	Maintained and optimized enterprise-level databases, resulting in 31% reduction in peak database usage, hence significantly reducing Joblogic’s annual Microsoft Azure’s subscription cost. 
+•	Managed and optimized enterprise-level databases, cutting peak usage by 60% and significantly lowering Joblogic’s Microsoft Azure costs. 
 <br/>•	Optimized more than 500 legacy queries using different ingenious techniques, resulting in 75% decrease in query execution time.
-<br/>•	Wrote more than 200 complex SQL Queries and Stored Procedures, using uncommon coding techniques such as recursive queries, to gather and manipulate data to be used for creating bespoke reports and dashboards, as per the customers’ requirements.
-<br/>•	Created more than 60 bespoke Dashboards, resulting in generating around £30,000 revenue for Joblogic.
-<br/>•	Skills used were SQL, MongoDB, C#, jQuery, JavaScript, Python, Power BI, Tableau, Stimulsoft, Git and Microsoft Azure.
+<br/>•	Wrote more than 200 complex SQL Queries and Stored Procedures, using uncommon coding techniques such as recursive queries.
+<br/>•	Created 60+ custom dashboards and reports that helped generate approximately £30,000 in revenue within a year.
+<br/>•	Skills used were SQL Server, C#, jQuery, JavaScript, Python, Power BI, Tableau, Stimulsoft, Microsoft Azure DevOps, Jira and Git.
 `,
       },
     ],
@@ -66,11 +66,10 @@ const jobs: Job[] = [
       {
         title: "Full Stack Developer",
         content: `
-•	Worked closely with 10+ clients from concept to development to deployment, providing technical guidance on best practices for performance, security, and costs.
+•	Worked closely with 10+ clients from concept to development to deployment, offering technical guidance on best practices for performance, security, and costs.
 <br/>•	Designed and developed a scalable e-commerce platform, that handled 2000+ simultaneous users, incorporating a user-friendly interface and seamless payment processing, utilizing clean, robust, and efficient coding pattern.
 <br/>•	Created a task management application with real-time collaboration features, enhancing team productivity and communication.
-<br/>•	Built a dynamic blog platform, that hosted 400+ articles, with content management capabilities, enabling easy publishing and editing of articles.
-<br/>•	Skills used were HTML, CSS, Tailwind CSS, JavaScript, TypeScript, ReactJS, Node.js, Next.js, MongoDB, Redux, Primsa.io, React Query and Vercel.
+<br/>•	Skills used were HTML, Tailwind CSS, JavaScript, TypeScript, React, Node, Next.js, MongoDB, Redux, Vercel, AWS and Lambda Functions.
 `,
       },
     ],
@@ -87,10 +86,11 @@ const jobs: Job[] = [
       {
         title: "Full Stack Developer",
         content: `
-•	Developed real-time data visualization dashboard, improving data monitoring capabilities by 30%.
-<br/>•	Integrated telecom APIs into the portal, automating data retrieval processes and reducing manual data entry by 40%, leading to increased accuracy in reporting and operational efficiency.
-<br/>•	Optimized database performance for handling large volumes of telecom data, resulting in a 20% reduction in query response time and ensuring seamless access to real-time information for users.
-<br/>•	Skills used were HTML5, CSS3, Bootstrap, JavaScript, ReactJS, Node.js, MongoDB, Figma, Google Maps API, REST API and Git.`,
+•	Developed real-time data visualization dashboard, improving data monitoring capabilities by 50%.
+<br/>•	Integrated APIs into the portal, automating data retrieval processes and reducing manual data entry by 70%, leading to increased accuracy in reporting and operational efficiency.
+<br/>•	Optimized database performance for handling large volumes of data, resulting in a 20% reduction in query response time and ensuring seamless access to real-time information for users.
+<br/>•	Skills used were HTML5, CSS3, Bootstrap, JavaScript, React JS, Node JS, MongoDB, Figma, WebSocket, Google Maps API, REST API and Git.
+`,
       },
     ],
   },
