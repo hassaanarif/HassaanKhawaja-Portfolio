@@ -28,24 +28,20 @@ function About() {
 
         <motion.div initial={{ opacity: 0, x: 200 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}>
           <p className="text-justify">
-            As a software developer with 5 years of experience, I bring a wealth of knowledge and expertise to every
-            project I undertake. My proficiency in programming languages such as JavaScript, TypeScript, and C# and
-            frameworks such as React JS, Vue JS, Next JS and ASP.NET Core allows me to design and build efficient and
-            elegant applications that meet the needs of clients across a wide range of industries. My technical skills
-            are matched by my creativity and innovative thinking. I approach each project with a fresh perspective,
-            working closely with clients to understand their unique needs and requirements and develop customized
-            solutions that exceed their expectations. I have a keen eye for detail and am committed to ensuring that
-            every application I build is thoroughly tested and rigorously optimized for performance. In addition to my
-            technical prowess, I possess exceptional communication and collaboration skills. I am a natural problem
-            solver, able to work effectively with teams of designers, developers, and project managers to overcome
-            challenges and deliver outstanding results. My ability to think strategically and work efficiently make me a
-            valuable asset to any team, and my dedication to delivering projects on time and within budget has earned me
-            a reputation as a reliable and trustworthy partner. Outside of work, I am an avid learner and enjoy staying
-            up to date with the latest trends and developments in my field. I am passionate about technology and its
-            potential to change the world, and I am committed to using my skills and knowledge to make a positive impact
-            on society. Overall, my combination of technical expertise, creativity, and collaboration skills make me a
-            valuable addition to any team seeking to develop high-quality software solutions that meet the needs of
-            clients and users alike.
+            With 5+ years of experience designing and building scalable web applications across industries including
+            field service, government, and enterprise software. My expertise spans the full stack, from creating modern,
+            responsive UIs with React, Next.js, Vue.js, and Angular to building scalable back-end systems with ASP.NET
+            Core, Node.js, microservices, and serverless architectures. I’ve also worked extensively with SQL Server,
+            PostgreSQL, and MongoDB, where I optimized enterprise-level databases by reducing peak usage by 60%,
+            improving query performance by 75%, and generating over £30,000 in revenue through advanced reporting
+            dashboards. On the cloud side, I’ve deployed secure and scalable solutions using Azure, AWS, Docker, and
+            CI/CD pipelines. Some of my key projects include leading development of a GIS Digital Twin for NSW Education
+            that improved asset management across 2,200+ schools, building TrackerGo, a custom CRM that cut Joblogic’s
+            costs by 30% through microservices migration, and delivering real-time dashboards that supported critical
+            business decisions. Alongside client work, I actively explore AI and emerging technologies, experimenting
+            with LangChain, agentic AI, MCP servers, and vector databases to integrate intelligent features into modern
+            web solutions. At the core of everything I do is a focus on solving problems, optimizing performance, and
+            creating solutions that deliver real value.
           </p>
         </motion.div>
       </article>
