@@ -1,6 +1,6 @@
-import CertificateProps from "../interfaces/Certificate";
-import Badge from "../assets/icon-badge.png";
 import { motion } from "framer-motion";
+import Badge from "../assets/icon-badge.png";
+import CertificateProps from "../interfaces/Certificate";
 
 function Certificate({ title, duration, issuer, logoURL }: CertificateProps) {
   return (

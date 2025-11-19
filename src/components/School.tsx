@@ -1,5 +1,5 @@
-import SchoolProp from "../interfaces/School";
 import { motion } from "framer-motion";
+import SchoolProp from "../interfaces/School";
 
 export default function School({ name, location, degree, startDate, endDate, logoURL, highlights }: SchoolProp) {
   return (
