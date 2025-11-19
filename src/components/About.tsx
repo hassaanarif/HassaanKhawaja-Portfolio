@@ -16,7 +16,7 @@ function About() {
           KHAWAJA HASSAAN ARIF
         </span>
         <br />
-        <p className="font-thin text-2xl mt-2">Senior Software Developer</p>
+        <p className="font-thin text-2xl mt-2">Senior Software Engineer</p>
       </motion.article>
 
       <article className="flex flex-col items-center gap-2 mt-10 md:mt-20 md:block">

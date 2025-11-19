@@ -1,9 +1,30 @@
 import Aircod from "../assets/Aircod.png";
+import Arbisoft from "../assets/Arbisoft.webp";
 import JL from "../assets/Joblogic.png";
 import Woolpert from "../assets/Woolpert.png";
 import Job from "../interfaces/Job";
 
 const jobs: Job[] = [
+  {
+    company: "Arbisoft",
+    companyLogoURL: Arbisoft,
+    time: "Full-time",
+    location: "Lahore, Pakistan",
+    startDate: "2025-11-10",
+
+    positions: [
+      {
+        title: "Senior Software Engineer",
+        content: `
+•  Engaged in full-stack development of web applications, collaborating with cross-functional teams to deliver high-quality software solutions.
+<br/>•  Utilized modern frameworks and technologies to build responsive and user-friendly interfaces, ensuring optimal performance and usability.
+<br/>•  Implemented robust back-end services and APIs, ensuring scalability, security, and maintainability of applications.
+<br/>•  Participated in code reviews, testing, and debugging to ensure code quality and adherence to best practices.
+<br/>•  Tech stack: TypeScript, React.js, Node.js, Express.js, MongoDB, AWS, Docker, CI/CD Pipelines.
+`,
+      },
+    ],
+  },
   {
     company: "Woolpert Asia Pacific",
     companyLogoURL: Woolpert,
