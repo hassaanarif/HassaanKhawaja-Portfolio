@@ -3,10 +3,11 @@ import School from "./School";
 
 function Education() {
   return (
-    <section id="education" className="py-10 px-5 md:px-36">
-      <h1 className="text-center break-words text-6xl font-extrabold bg-gradient-to-r from-orange-600 to-purple-600 bg-clip-text text-transparent">
-        EDUCATION
-      </h1>
+    <section id="education" className="section-container section-spacing">
+      <div className="mb-10">
+        <p className="eyebrow mb-3">Background</p>
+        <h2 className="section-title">Education.</h2>
+      </div>
 
       {schools.map((school, index) => {
         return (

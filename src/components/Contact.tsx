@@ -58,95 +58,100 @@ function Contact() {
 
   return (
     <>
-      <section id="contact" className="pb-10 px-5 md:px-36">
-        <h1 className="text-center text-6xl font-extrabold bg-gradient-to-r from-orange-600 to-purple-600 bg-clip-text text-transparent">
-          CONTACT
-        </h1>
+      <section id="contact" className="section-container section-spacing">
+        <div className="surface-card grid gap-10 p-6 sm:p-9 lg:grid-cols-[0.8fr_1.2fr] lg:p-12">
+          <div>
+            <p className="eyebrow mb-3">Say hello</p>
+            <h2 className="section-title">Have a good problem to solve?</h2>
+            <p className="muted-copy mt-5">
+              If you’re building something useful and need an engineering partner, I’d be glad to hear about it.
+            </p>
+            <a href="mailto:hassaanarif.ha@gmail.com" className="teal-link mt-6 inline-block font-medium">
+              hassaanarif.ha@gmail.com ↗
+            </a>
+          </div>
 
-        <form
-          onSubmit={handleFormSubmit}
-          className="w-[100%] md:w-[50%] mx-auto mt-10 p-5 rounded-lg bg-white bg-opacity-30 text-white "
-        >
-          <div className="w-full lg:w-12/12 px-3">
-            <label className="block text-xs font-bold mb-2" htmlFor="name">
-              NAME <span className="text-orange-600"> *</span>
-            </label>
-            <input
-              id="name"
-              required
-              type="text"
-              autoComplete="off"
-              className=" px-3 py-3 text-black font-semibold rounded-md focus:outline-none focus:ring w-full ease-linear transition-all duration-100"
-              placeholder="Name"
-              value={formData.name}
-              onChange={handleInputChange}
-            />
-          </div>
-          <div className="w-full  my-5 px-3">
-            <label className="block text-xs font-bold mb-2" htmlFor="email">
-              EMAIL <span className="text-orange-600"> *</span>
-            </label>
-            <input
-              id="email"
-              required
-              autoComplete="off"
-              type="email"
-              className=" px-3 py-3 text-black font-semibold rounded-md focus:outline-none focus:ring w-full ease-linear transition-all duration-100"
-              placeholder="Email"
-              value={formData.email}
-              onChange={handleInputChange}
-            />
-          </div>
-          <div className="w-full my-5 px-3">
-            <label className="block text-xs font-bold mb-2" htmlFor="telephone">
-              TELEPHONE
-            </label>
-            <input
-              id="telephone"
-              required
-              autoComplete="off"
-              type="tel"
-              className=" px-3 py-3 text-black font-semibold rounded-md focus:outline-none focus:ring w-full ease-linear transition-all duration-100"
-              placeholder="Telephone"
-              value={formData.telephone}
-              onChange={handleInputChange}
-            />
-          </div>
-          <div className="w-full my-5 px-3">
-            <label className="block text-xs font-bold mb-2" htmlFor="message">
-              MESSAGE <span className="text-orange-600"> *</span>
-            </label>
-            <textarea
-              id="message"
-              required
-              autoComplete="off"
-              maxLength={2000}
-              rows={6}
-              className="resize-none px-3 py-3 text-black font-semibold rounded-md focus:outline-none focus:ring w-full ease-linear transition-all duration-100"
-              placeholder="Message"
-              value={formData.message}
-              onChange={handleInputChange}
-            />
-          </div>
-          <div className="w-full my-5 px-3 text-center">
-            <button
-              type="submit"
-              className={`py-2 w-full rounded-md bg-gradient-to-r from-orange-600 to-purple-600 text-white font-semibold ${
-                processing ? "hover:cursor-not-allowed" : ""
-              }`}
-            >
-              {processing ? (
-                <div className="loading-dots">
-                  <span className="dot"></span>
-                  <span className="dot"></span>
-                  <span className="dot"></span>
-                </div>
-              ) : (
-                "SUBMIT"
-              )}
-            </button>
-          </div>
-        </form>
+          <form onSubmit={handleFormSubmit} className="space-y-5">
+            <div className="w-full">
+              <label className="mb-2 block text-xs font-bold" htmlFor="name">
+                NAME <span className="accent-text"> *</span>
+              </label>
+              <input
+                id="name"
+                required
+                type="text"
+                autoComplete="off"
+                className="input-surface w-full rounded-xl border border-white/10 px-4 py-3 text-[#eef1ec] placeholder:text-[#778078] focus:border-[var(--accent)] focus:outline-none"
+                placeholder="Name"
+                value={formData.name}
+                onChange={handleInputChange}
+              />
+            </div>
+            <div className="w-full">
+              <label className="mb-2 block text-xs font-bold" htmlFor="email">
+                EMAIL <span className="accent-text"> *</span>
+              </label>
+              <input
+                id="email"
+                required
+                autoComplete="off"
+                type="email"
+                className="input-surface w-full rounded-xl border border-white/10 px-4 py-3 text-[#eef1ec] placeholder:text-[#778078] focus:border-[var(--accent)] focus:outline-none"
+                placeholder="Email"
+                value={formData.email}
+                onChange={handleInputChange}
+              />
+            </div>
+            <div className="w-full">
+              <label className="mb-2 block text-xs font-bold" htmlFor="telephone">
+                TELEPHONE
+              </label>
+              <input
+                id="telephone"
+                required
+                autoComplete="off"
+                type="tel"
+                className="input-surface w-full rounded-xl border border-white/10 px-4 py-3 text-[#eef1ec] placeholder:text-[#778078] focus:border-[var(--accent)] focus:outline-none"
+                placeholder="Telephone"
+                value={formData.telephone}
+                onChange={handleInputChange}
+              />
+            </div>
+            <div className="w-full">
+              <label className="mb-2 block text-xs font-bold" htmlFor="message">
+                MESSAGE <span className="accent-text"> *</span>
+              </label>
+              <textarea
+                id="message"
+                required
+                autoComplete="off"
+                maxLength={2000}
+                rows={6}
+                className="input-surface w-full resize-none rounded-xl border border-white/10 px-4 py-3 text-[#eef1ec] placeholder:text-[#778078] focus:border-[var(--accent)] focus:outline-none"
+                placeholder="Message"
+                value={formData.message}
+                onChange={handleInputChange}
+              />
+            </div>
+            <div className="w-full">
+              <button
+                type="submit"
+                disabled={processing}
+                className="accent-bg accent-contrast-text w-full rounded-full px-6 py-3 font-bold transition disabled:cursor-not-allowed disabled:opacity-60"
+              >
+                {processing ? (
+                  <div className="loading-dots">
+                    <span className="dot"></span>
+                    <span className="dot"></span>
+                    <span className="dot"></span>
+                  </div>
+                ) : (
+                  "SUBMIT"
+                )}
+              </button>
+            </div>
+          </form>
+        </div>
       </section>
 
       <ToastContainer />

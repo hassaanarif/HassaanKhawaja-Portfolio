@@ -3,15 +3,20 @@ import Job from "./Job";
 
 function Experience() {
   return (
-    <section id="experience" className="py-10 px-5 md:px-36">
-      <h1 className="text-center break-words text-6xl font-extrabold bg-gradient-to-r from-orange-600 to-purple-600 bg-clip-text text-transparent">
-        EXPERIENCE
-      </h1>
+    <section id="experience" className="section-container section-spacing">
+      <div className="mb-10">
+        <p className="eyebrow mb-3">Career</p>
+        <h2 className="section-title">Experience that ships.</h2>
+        <p className="muted-copy mt-4 max-w-2xl">
+          I’ve worked with teams in healthcare AI, public infrastructure, and SaaS—building products and improving the
+          systems behind them.
+        </p>
+      </div>
 
-      {Jobs.map((job, index) => {
-        return (
+      <div className="space-y-4">
+        {Jobs.map((job) => (
           <Job
-            key={index}
+            key={`${job.company}-${job.startDate}`}
             time={job.time}
             location={job.location}
             company={job.company}
@@ -19,9 +24,9 @@ function Experience() {
             startDate={job.startDate}
             endDate={job.endDate}
             companyLogoURL={job.companyLogoURL}
-          ></Job>
-        );
-      })}
+          />
+        ))}
+      </div>
     </section>
   );
 }

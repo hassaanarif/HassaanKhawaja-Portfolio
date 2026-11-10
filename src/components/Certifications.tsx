@@ -3,12 +3,13 @@ import Certificate from "./Certificate";
 
 function Certifications() {
   return (
-    <section id="certifications" className="py-10 px-5 md:px-36">
-      <h1 className="text-center break-words text-6xl font-extrabold bg-gradient-to-r from-orange-600 to-purple-600 bg-clip-text text-transparent">
-        CERTIFICATIONS
-      </h1>
+    <section id="certifications" className="section-container section-spacing pt-0">
+      <div className="mb-10">
+        <p className="eyebrow mb-3">Continuous learning</p>
+        <h2 className="section-title">Courses & certifications.</h2>
+      </div>
 
-      <div className="mt-10 flex flex-wrap gap-10">
+      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {certifications.map((certificate, index) => (
           <Certificate
             key={index}

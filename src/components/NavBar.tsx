@@ -1,92 +1,60 @@
-import H from "../assets/icon-h.png";
-import K from "../assets/icon-k.png";
+import { useState } from "react";
 
-import { useEffect, useRef, useState } from "react";
-import close from "../assets/icon-close.svg";
-import menu from "../assets/icon-menu.svg";
+const links = [
+  { label: "Experience", href: "#experience" },
+  { label: "Projects", href: "#projects" },
+  { label: "Skills", href: "#skills" },
+  { label: "Education", href: "#education" },
+  { label: "Certifications", href: "#certifications" },
+];
 
 function NavBar() {
-  const [menuIsOpen, setMenuIsOpen] = useState<boolean>(false);
-  const navBarRef = useRef<HTMLElement>(null);
-
-  const scrollHandler = (): void => {
-    document.addEventListener("scroll", () => {
-      if (window.scrollY > 0) {
-        navBarRef?.current?.classList.add("backdrop-blur-md");
-      } else {
-        navBarRef?.current?.classList.remove("backdrop-blur-md");
-      }
-    });
-  };
-
-  useEffect(() => {
-    scrollHandler();
-
-    return () => {
-      document.removeEventListener("scroll", scrollHandler);
-    };
-  }, []);
+  const [menuIsOpen, setMenuIsOpen] = useState(false);
 
   return (
-    <nav
-      ref={navBarRef}
-      className="px-5 py-2 flex justify-between flex-wrap border-b-2 gradient-border-l-r sticky top-0 z-10 text-gray-300"
-    >
-      <a href="#" className="flex gap-1 items-center md:basis-[30%]">
-        <img src={H} alt="Display Picture" className="w-6" />
-        <img src={K} alt="Display Picture" className="w-6" />
-      </a>
-
-      <div className="flex items-center hover:cursor-pointer md:hidden">
-        <a onClick={() => setMenuIsOpen(!menuIsOpen)} title="menu">
-          <img src={menuIsOpen ? close : menu} alt="menu" className="w-6 invert" />
+    <header className="nav-surface sticky top-0 z-20 border-b border-white/[0.08] backdrop-blur-xl">
+      <nav className="section-container flex min-h-[72px] flex-wrap items-center justify-between gap-4 py-3" aria-label="Main navigation">
+        <a href="#about" className="flex items-center gap-3" aria-label="Hassaan Khawaja, home">
+          <span className="accent-bg accent-contrast-text flex h-10 w-10 items-center justify-center rounded-xl text-sm font-black tracking-tight">
+            HK
+          </span>
+          <span className="hidden text-sm font-semibold text-[#e8e9e7] sm:inline">Hassaan Khawaja</span>
         </a>
-      </div>
 
-      <section
-        className={`${
-          menuIsOpen ? "flex flex-col" : "hidden"
-        } py-5 md:p-2 md:m-0 w-full md:flex md:flex-row md:justify-between md:basis-[70%] items-center`}
-      >
-        <div className="flex flex-col gap-2 md:flex-row md:gap-10">
-          <div className="text-lg hover:cursor-pointer hover:text-orange-600 transition-all ease-linear w-full text-center">
-            <a href="#" onClick={() => setMenuIsOpen(false)}>
-              Home
+        <button
+          type="button"
+          className="rounded-lg border border-white/10 px-3 py-2 text-sm font-medium text-white md:hidden"
+          aria-expanded={menuIsOpen}
+          aria-controls="primary-navigation"
+          onClick={() => setMenuIsOpen(!menuIsOpen)}
+        >
+          {menuIsOpen ? "Close" : "Menu"}
+        </button>
+
+        <div
+          id="primary-navigation"
+          className={`${menuIsOpen ? "flex" : "hidden"} w-full flex-col gap-2 pb-2 md:flex md:w-auto md:flex-row md:items-center md:gap-8 md:pb-0`}
+        >
+          {links.map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
+              onClick={() => setMenuIsOpen(false)}
+              className="py-2 text-sm text-[#a7afa8] transition hover:text-[var(--accent)]"
+            >
+              {link.label}
             </a>
-          </div>
-          <div className="text-lg hover:cursor-pointer hover:text-orange-600 transition-all ease-linear w-full text-center">
-            <a href="#about" onClick={() => setMenuIsOpen(false)}>
-              About
-            </a>
-          </div>
-          <div className="text-lg hover:cursor-pointer hover:text-orange-600 transition-all ease-linear w-full text-center">
-            <a href="#experience" onClick={() => setMenuIsOpen(false)}>
-              Experience
-            </a>
-          </div>
-          <div className="text-lg hover:cursor-pointer hover:text-orange-600 transition-all ease-linear w-full text-center">
-            <a href={"#skills"} onClick={() => setMenuIsOpen(false)}>
-              Skills
-            </a>
-          </div>
-          <div className="text-lg hover:cursor-pointer hover:text-orange-600 transition-all ease-linear w-full text-center">
-            <a href={"#certifications"} onClick={() => setMenuIsOpen(false)}>
-              Certifications
-            </a>
-          </div>
-          <div className="text-lg hover:cursor-pointer hover:text-orange-600 transition-all ease-linear w-full text-center">
-            <a href={"#projects"} onClick={() => setMenuIsOpen(false)}>
-              Projects
-            </a>
-          </div>
-          <div className="text-lg hover:cursor-pointer hover:text-orange-600 transition-all ease-linear w-full text-center">
-            <a href={"#contact"} onClick={() => setMenuIsOpen(false)}>
-              Contact
-            </a>
-          </div>
+          ))}
+          <a
+            href="#contact"
+            onClick={() => setMenuIsOpen(false)}
+            className="accent-border accent-text mt-1 rounded-full border px-5 py-2.5 text-center text-sm font-semibold transition hover:bg-[var(--accent)] hover:text-[var(--accent-contrast)] md:mt-0"
+          >
+            Contact
+          </a>
         </div>
-      </section>
-    </nav>
+      </nav>
+    </header>
   );
 }
 

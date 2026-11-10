@@ -3,9 +3,10 @@ import { useEffect, useRef, useState } from "react";
 interface LazyImageProps {
   src: string;
   alt: string;
+  className?: string;
 }
 
-function LazyImage({ src, alt }: LazyImageProps) {
+function LazyImage({ src, alt, className }: LazyImageProps) {
   const [imageSrc, setImageSrc] = useState<string>();
   const imageRef = useRef<HTMLImageElement>(null);
 
@@ -39,7 +40,7 @@ function LazyImage({ src, alt }: LazyImageProps) {
     };
   }, [src]);
 
-  return <img ref={imageRef} src={imageSrc} alt={alt} className="rounded-md border-4 border-orange-600" />;
+  return <img ref={imageRef} src={imageSrc} alt={alt} className={className ?? "h-full w-full object-cover"} />;
 }
 
 export default LazyImage;

@@ -1,10 +1,18 @@
 import SkillBadgeProp from "../interfaces/SkillBadge";
 
 function SkillBadge(props: SkillBadgeProp) {
+  const needsLightLogo = props.name === "JQuery" || props.name === "Kafka";
+
   return (
-    <div className="flex shrink-0 gap-2 mx-2 items-center border-2 px-3 py-2 rounded-full border-gray-100	text-gray-950 bg-gray-100">
-      <img src={props.logoURL} alt={props.name} className="w-8 " />
-      <div className="font-semibold text-lg">{props.name}</div>
+    <div className="input-surface flex items-center gap-2 rounded-full border border-white/10 px-3 py-2 text-[#c5cec6]">
+      {props.logoURL && (
+        <img
+          src={props.logoURL}
+          alt=""
+          className={`h-5 w-5 object-contain ${needsLightLogo ? "brightness-0 invert" : ""}`}
+        />
+      )}
+      <span className="text-sm font-medium">{props.name}</span>
     </div>
   );
 }

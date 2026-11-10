@@ -12,47 +12,56 @@ function Project({
   theOutcome,
   technologiesUsed,
 }: ProjectProp) {
-  return (
-    <article className="mt-10 mb-20 ">
-      <h4 className="text-center font-extrabold text-3xl mb-10  text-white">{title}</h4>
+  const isFeatured = index === 0;
 
-      <div
-        className={`md:flex md:gap-20 md:items-center ${
-          (index ?? 0) % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-        }`}
-      >
-        <motion.div
-          className="w-full md:w-[50%] mt-10 mb-5 md:m-0 perspective"
-          initial={(index ?? 0) % 2 === 0 ? { x: -50 } : { x: 50 }}
-          whileInView={{ x: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 1 }}
-        >
-          <LazyImage src={imageURL} alt="Project Screenshot" />
-        </motion.div>
-        <motion.div
-          className="w-full md:w-[50%] text-justify"
-          initial={(index ?? 0) % 2 === 0 ? { x: 50 } : { x: -50 }}
-          whileInView={{ x: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 1 }}
-        >
-          <b className="text-orange-600">BRIEF INTRODUCTION:</b>
-          <p>{briefIntroduction}</p>
-          <br />
-          <b className="text-orange-600">THE PROBLEM:</b>
-          <p>{theProblem}</p>
-          <br />
-          <b className="text-orange-600">MY CONTRIBUTIONS:</b>
-          <p>{myContributions}</p>
-          <br />
-          <b className="text-orange-600">THE OUTCOME:</b>
-          <p>{theOutcome}</p>
-          <br />
-          <b className="text-orange-600">TECHNOLOGIES USED:</b> {technologiesUsed}
-        </motion.div>
+  return (
+    <motion.article
+      className={`surface-card group overflow-hidden ${isFeatured ? "lg:col-span-2" : ""}`}
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.1 }}
+      transition={{ duration: 0.45 }}
+    >
+      <div className={`grid ${isFeatured ? "lg:grid-cols-[1.05fr_0.95fr]" : ""}`}>
+        <div className={`input-surface overflow-hidden ${isFeatured ? "min-h-64 lg:min-h-full" : "aspect-[16/9]"}`}>
+          <LazyImage
+            src={imageURL}
+            alt={`${title} project preview`}
+            className="h-full w-full object-cover transition duration-500 group-hover:scale-[1.025]"
+          />
+        </div>
+        <div className={`flex flex-col p-5 sm:p-7 ${isFeatured ? "lg:p-9" : ""}`}>
+          <p className="eyebrow mb-3">{isFeatured ? "Featured project" : "Project"}</p>
+          <h3 className="text-xl font-semibold tracking-tight text-[#f0f1ed] sm:text-2xl">{title}</h3>
+          <p className="mt-3 text-sm leading-6 text-[#a7afa8]">{briefIntroduction}</p>
+
+          <div className="accent-border mt-5 border-l-2 pl-4">
+            <p className="accent-text text-xs font-bold uppercase tracking-[0.12em]">Impact</p>
+            <p className="mt-1 text-sm leading-6 text-[#d3d9d3]">{theOutcome}</p>
+          </div>
+
+          <details className="mt-5 border-t border-white/[0.08] pt-4">
+            <summary className="accent-marker cursor-pointer text-sm font-semibold text-[#d7ddd7] marker:text-[var(--accent)] hover:text-[var(--accent)]">
+              More about the project
+            </summary>
+            <div className="mt-4 space-y-4 text-sm leading-6 text-[#a7afa8]">
+              <p>
+                <span className="font-semibold text-[#e1e6e1]">Challenge: </span>
+                {theProblem}
+              </p>
+              <p>
+                <span className="font-semibold text-[#e1e6e1]">My contribution: </span>
+                {myContributions}
+              </p>
+              <p>
+                <span className="font-semibold text-[#e1e6e1]">Tools: </span>
+                {technologiesUsed}
+              </p>
+            </div>
+          </details>
+        </div>
       </div>
-    </article>
+    </motion.article>
   );
 }
 

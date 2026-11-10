@@ -11,7 +11,7 @@ const schools: School[] = [
     endDate: "2022",
     logoURL: Mosh,
     highlights: `
-      •	Successfully completed over 15 advanced programming courses with certificates of completion from codewithmosh.com, showcasing a commitment to continuous learning and mastery of diverse programming concepts.
+      •	Successfully completed 20+ beginner-to-advanced web development courses with certificates of completion from CodeWithMosh.com, showcasing a commitment to continuous learning and mastery of diverse programming concepts.
 <br/> •	Developed a solid foundation in building responsive and dynamic web applications through guided, project-based learning.
     `,
   },

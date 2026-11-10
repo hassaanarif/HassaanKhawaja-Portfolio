@@ -1,5 +1,5 @@
-import Aircod from "../assets/Aircod.png";
 import Arbisoft from "../assets/Arbisoft.webp";
+import Freelance from "../assets/icon-freelance.png";
 import JL from "../assets/Joblogic.png";
 import Woolpert from "../assets/Woolpert.png";
 import Job from "../interfaces/Job";
@@ -9,18 +9,17 @@ const jobs: Job[] = [
     company: "Arbisoft",
     companyLogoURL: Arbisoft,
     time: "Full-time",
-    location: "Lahore, Pakistan",
+    location: "Remote, Pakistan",
     startDate: "2025-11-10",
 
     positions: [
       {
         title: "Senior Software Engineer",
         content: `
-•  Engaged in full-stack development of web applications, collaborating with cross-functional teams to deliver high-quality software solutions.
-<br/>•  Utilized modern frameworks and technologies to build responsive and user-friendly interfaces, ensuring optimal performance and usability.
-<br/>•  Implemented robust back-end services and APIs, ensuring scalability, security, and maintainability of applications.
-<br/>•  Participated in code reviews, testing, and debugging to ensure code quality and adherence to best practices.
-<br/>•  Tech stack: TypeScript, React.js, Node.js, Express.js, MongoDB, AWS, Docker, CI/CD Pipelines.
+•  Developing Peter, an AI assistant that helps clinical research teams find answers in study protocols and related documents.
+<br/>•  Building LangGraph workflows with AWS Bedrock to route trial questions to the right AI and retrieval process.
+<br/>•  Improving clinical document search and retrieval with OpenSearch.
+<br/>•  Tech stack: TypeScript, React.js, Node.js, Apollo GraphQL, LangGraph, AWS Bedrock, PostgreSQL, Kafka, microservices, Git, Jira, and CI/CD.
 `,
       },
     ],
@@ -35,14 +34,13 @@ const jobs: Job[] = [
 
     positions: [
       {
-        title: "Senior Software Engineer",
+        title: "Software Engineer",
         content: `
-• Led development of the NSW School Infrastructure Digital Twin, from Phase 1 to completion.
-<br/>• Integrated Esri ArcGIS SDK to enable seamless 2D and 3D mapping for over 2,200 schools across NSW.
-<br/>• Built custom widgets and APIs to manage assets and documents, streamlining workflows and replacing legacy systems.
-<br/>• Optimized map rendering and frontend speed, improving performance of complex geospatial visualisations by an estimated 30–40%
-<br/>• Delivered a full web and GIS solution that enabled NSW Education to better manage infrastructure, plan future investments, and improve decision-making across schools.
-<br/>• Tech stack: TypeScript, Vue.js, React.js, Node.js, ArcGIS SDK, PostgreSQL, Azure DevOps, CI/CD, Git, Jira, Confluence
+• Helped build the NSW Government's School Infrastructure Digital Twin.
+<br/>• Added 2D and 3D maps for more than 2,200 schools using Esri ArcGIS SDK.
+<br/>• Improved complex map performance by an estimated 30–40%.
+<br/>• Helped NSW Education manage school infrastructure and plan future investments.
+<br/>•  Tech stack: TypeScript, Vue.js, React.js, Node.js, Esri ArcGIS SDK, PostgreSQL, Azure DevOps, CI/CD, Git, Jira, Confluence
 `,
       },
     ],
@@ -52,47 +50,56 @@ const jobs: Job[] = [
     location: "Lahore, Pakistan",
     companyLogoURL: JL,
     time: "Full-time",
-    startDate: "2021-02-08",
+    startDate: "2022-02-01",
     endDate: "2024-04-30",
     positions: [
       {
         title: "Full Stack Engineer",
         content: `
-•  Built TrackerGo, a cloud-based CRM developed in-house, which replaced third-party CRMs and helped Joblogic cut annual costs by 30%.
-<br/>•  Devised different optimization techniques to deal with large data throughput, resulting in quick navigation between pages, faster page loads, smooth animations, quick query executions and overall, 60% improvement in user experience.
-<br/>•  Integrated TrackerGo with Xero API, automating the invoicing process, resulting in a 90% reduction in invoicing errors.
-<br/>•  Migrated legacy code from monolithic to microservice architecture, making it 100% more scalable and maintainable.
-<br/>•  Tech stack: HTML5, CSS3, JavaScript, jQuery, Vue.js, C#, ASP.NET Core MVC, Entity Framework ORM, SQL Server, Swagger, Microsoft Azure, Azure Functions, Azure DevOps, REST API, CI/CD Pipeline, Batch & Stream Processing, Kafka, Jira and Git.
+•  Built TrackerGo, an internal operations platform that replaced third-party tools and cut annual costs by 30%.
+<br/>•  Improved user experience by 60% with faster page loads, navigation, animations, and database queries.
+<br/>•  Automated invoicing with the Xero API, reducing errors by 90%.
+<br/>•  Moved legacy software to microservices, making it 100% more scalable and maintainable.
+<br/>•  Tech stack: JavaScript, jQuery, Vue.js, C#, ASP.NET Core MVC, Entity Framework, SQL Server, SonarQube, Azure, CI/CD, Kafka, Jira, and Git.
 `,
       },
+    ],
+  },
+  {
+    company: "Joblogic Pvt Ltd",
+    location: "Lahore, Pakistan",
+    companyLogoURL: JL,
+    time: "Full-time",
+    startDate: "2021-02-01",
+    endDate: "2022-02-01",
+    positions: [
       {
         title: "Database Engineer",
         content: `
-•  Managed and optimized enterprise-level databases, cutting peak usage by 60% and significantly lowering Microsoft Azure costs. 
-<br/>•  Optimized more than 500 legacy queries using different ingenious techniques, resulting in 75% decrease in query execution time.
-<br/>•  Wrote more than 200 complex SQL Queries and Stored Procedures, using uncommon coding techniques such as recursive queries.
-<br/>•  Created 60+ custom dashboards and reports that helped generate approximately £30,000 in revenue within a year.
-<br/>•  Tech stack: SQL Server, C#, jQuery, JavaScript, Python, Power BI, Tableau, Stimulsoft, Microsoft Azure DevOps, Jira and Git.
+•  Reduced peak database usage by 60%, lowering Microsoft Azure costs.
+<br/>•  Improved more than 500 legacy queries, cutting execution time by 75%.
+<br/>•  Wrote 200+ SQL queries and stored procedures, including recursive queries.
+<br/>•  Built 60+ dashboards and reports that generated about £30,000 in revenue in one year.
+<br/>•  Tech stack: SQL Server, C#, jQuery, JavaScript, Python, Power BI, Stimulsoft, Microsoft Azure DevOps, Jira, and Git.
 `,
       },
     ],
   },
 
   {
-    company: "Aircod Technologies",
-    companyLogoURL: Aircod,
-    time: "Full-time",
+    company: "Freelance",
+    companyLogoURL: Freelance,
+    time: "Freelance",
     location: "Lahore, Pakistan",
     startDate: "2019-08-01",
-    endDate: "2020-08-01",
+    endDate: "2021-02-01",
     positions: [
       {
-        title: "Full Stack Engineer",
+        title: "Web Developer",
         content: `
-•  Created real-time data visualization dashboard, improving data monitoring capabilities by 50%.
-<br/>•  Integrated APIs into the portal, automating data retrieval processes and reducing manual data entry by 70%, leading to increased accuracy in reporting and operational efficiency.
-<br/>•  Optimized database performance for handling large volumes of data, resulting in a 20% reduction in query response time and ensuring seamless access to real-time information for users.
-<br/>•  Tech stack: HTML5, CSS3, Bootstrap, JavaScript, React JS, Node JS, MongoDB, Figma, WebSocket, Google Maps API, REST API and Git.
+•  Built responsive web applications from scratch and as part of project teams.
+<br/>•  Connected applications to third-party services, including FormSpree.
+<br/>•  Tech stack: HTML5, CSS3, JavaScript, React.js, Node.js, Express.js, MongoDB, REST APIs, and Git.
 `,
       },
     ],
