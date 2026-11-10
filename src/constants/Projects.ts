@@ -17,6 +17,7 @@ const projects: Project[] = [
     myContributions: `Building LangGraph workflows with AWS Bedrock to route trial questions, and improving document search and retrieval with OpenSearch.`,
     theOutcome: `Peter returns document-based answers and summaries to support research teams. Users review its responses and original sources.`,
     technologiesUsed: "TypeScript, React.js, Node.js, Apollo GraphQL, LangGraph, AWS Bedrock, OpenSearch, PostgreSQL, Kafka, Microservices",
+    projectURL: "https://studyteamapp.com/site/peter",
   },
   {
     title: "New South Wales School Infrastructure Digital Twin",
@@ -27,6 +28,7 @@ const projects: Project[] = [
     theOutcome: `The project helped the department manage assets, plan upgrades, and make better decisions across more than 2,200 schools.`,
     technologiesUsed:
       "HTML5, CSS3, TypeScript, Vue.js, Azure DevOps, Azure, REST API, Microservices, Geospatial Technologies",
+    projectURL: "https://portal.spatial.nsw.gov.au/explorer/index.html",
   },
   {
     title: "TrackerGo",
@@ -36,6 +38,7 @@ const projects: Project[] = [
     myContributions: `Built and optimized TrackerGo, connected it to Xero to automate invoicing, and moved legacy code to microservices.`,
     theOutcome: `TrackerGo cut annual costs by 30%, improved user experience by 60%, and reduced invoicing errors by 90%. The migration made the system 100% more scalable and maintainable.`,
     technologiesUsed: "HTML5, CSS3, JavaScript (ES6+), C#, ASP.NET Core, Entity Framework, JQuery, Bootstrap, KendoUI",
+    projectURL: "https://trackergo.joblogic.com",
   },
   {
     title: "Enterprise-Level Database Optimization and Maintenance",
@@ -45,6 +48,7 @@ const projects: Project[] = [
     myContributions: `Optimized 500+ queries, wrote 200+ SQL queries and stored procedures, and built 60+ dashboards and reports.`,
     theOutcome: `Peak database usage fell by 60% and query time by 75%. The dashboards generated about £30,000 in revenue in one year.`,
     technologiesUsed: "SQL Server, C#, jQuery, JavaScript, Python, Power BI, Stimulsoft, Azure DevOps, Jira, Git",
+    projectURL: "https://joblogic.com",
   },
   {
     title: "Portfolio",
@@ -54,6 +58,7 @@ const projects: Project[] = [
     myContributions: `Built the portfolio with React, TypeScript, and Tailwind CSS, and deployed it on Vercel.`,
     theOutcome: `The site presents my work in a responsive layout across devices.`,
     technologiesUsed: "HTML5, CSS3, JavaScript (ES6+), TypeScript, Tailwind CSS, Node.js, Express.js, MongoDB, Vercel",
+    projectURL: "https://github.com/hassaanarif/HassaanKhawaja-Portfolio",
   },
   {
     title: "Chat application",
@@ -63,6 +68,7 @@ const projects: Project[] = [
     myContributions: `Built the chat interface and real-time messaging with React, Node.js, Express, Socket.io, and MongoDB.`,
     theOutcome: `The app lets users exchange messages in real time.`,
     technologiesUsed: "HTML5, CSS3, JavaScript (ES6+), ReactJS 18, Node.js, Express.js, Socket.io, MongoDB",
+    projectURL: "https://github.com/hassaanarif/Chat_Application",
   },
   {
     title: "Vidly - a video rental app",
@@ -73,6 +79,7 @@ const projects: Project[] = [
     theOutcome: `The project helped me learn React and build a full-stack web application.`,
     technologiesUsed:
       "HTML5, CSS3, JavaScript (ES6+), ReactJS, React Router DOM, Joi, LoDash, Bootstrap, Node.js, Express.js, MongoDB, Heruko",
+    projectURL: "https://github.com/hassaanarif/Vidly-Project",
   },
   {
     title: "Rock Paper Scissors game",
@@ -82,6 +89,7 @@ const projects: Project[] = [
     myContributions: `Built the game logic, interface, and round transitions with JavaScript, HTML, and CSS.`,
     theOutcome: `The project gave me hands-on experience building interactive web apps.`,
     technologiesUsed: "HTML5, CSS3, JavaScript (ES6+)",
+    projectURL: "https://github.com/hassaanarif/Rock-Paper-Scissor",
   },
 ];
 

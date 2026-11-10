@@ -91,7 +91,11 @@ export default function Layout() {
   }, []);
 
   return (
-    <div className="portfolio-shell min-h-screen text-gray-200">
+    <div className="portfolio-shell text-slate-100">
+      <div className="ambient-glow-top" aria-hidden="true" />
+      <div className="ambient-glow-mid" aria-hidden="true" />
+      <div className="ambient-glow-bot" aria-hidden="true" />
+      
       <NavBar />
       <Wrapper>
         <About />

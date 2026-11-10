@@ -7,4 +7,5 @@ export default interface Project {
   myContributions: string;
   theOutcome: string;
   technologiesUsed: string;
+  projectURL?: string;
 }

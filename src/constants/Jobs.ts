@@ -8,7 +8,7 @@ const jobs: Job[] = [
   {
     company: "Arbisoft",
     companyLogoURL: Arbisoft,
-    time: "Full-time",
+    time: "Full-time (Contract)",
     location: "Remote, Pakistan",
     startDate: "2025-11-10",
 
@@ -27,7 +27,7 @@ const jobs: Job[] = [
   {
     company: "Woolpert Asia Pacific",
     companyLogoURL: Woolpert,
-    time: "Full-time",
+    time: "Full-time (Contract)",
     location: "Sydney, Australia",
     startDate: "2024-05-27",
     endDate: "2025-06-01",
