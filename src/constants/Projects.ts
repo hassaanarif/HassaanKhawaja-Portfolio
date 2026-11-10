@@ -5,7 +5,7 @@ import PF from "../assets/screenshot-potfolio.png";
 import RPS from "../assets/screenshot-rockPaperScissor.png";
 import TG from "../assets/screenshot-trackerGo.png";
 import VD from "../assets/screenshot-vidly.png";
-import Peter from "../assets/peter-protocol-reader-preview.svg";
+import Peter from "../assets/Screenshot-Peter The Protocol Reader.png";
 import Project from "../interfaces/Project";
 
 const projects: Project[] = [
